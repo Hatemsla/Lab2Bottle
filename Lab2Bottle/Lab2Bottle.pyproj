@@ -66,6 +66,9 @@
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\index.tpl" />
+    <Content Include="views\topic_rykhlov.tpl" />
+    <Content Include="views\topic_kalashnikov.tpl" />
+    <Content Include="views\topic_tarasov.tpl" />
     <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
