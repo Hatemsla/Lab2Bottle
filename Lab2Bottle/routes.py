@@ -41,6 +41,8 @@ def about():
 def about():
     """Renders the topic_tarasov page."""
     return dict(
+        title='Tarasov Nikita',
+        message='Topic Tarasov page',
         year=datetime.now().year
     )
 
@@ -49,6 +51,8 @@ def about():
 def about():
     """Renders the topic_tarasov page."""
     return dict(
+        title='Kalashnikov Jan',
+        message='Topic Kalashnikov page',
         year=datetime.now().year
     )
 
@@ -57,5 +61,7 @@ def about():
 def about():
     """Renders the topic_tarasov page."""
     return dict(
+        title='Rykhlov Kirill',
+        message='Topic Rykhlov page',
         year=datetime.now().year
     )
