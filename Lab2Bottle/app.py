@@ -2,6 +2,8 @@
 This script runs the application using a development server.
 """
 
+# -*- coding: utf-8 -*-
+
 import bottle
 import os
 import sys
