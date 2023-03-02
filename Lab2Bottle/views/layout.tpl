@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand"><img height="50" src="static\images\logo_team.jpg"/></a>
+                <a href="/" class="navbar-brand"><img height="40" width="40" src="static\images\logo_team.jpg"/></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
