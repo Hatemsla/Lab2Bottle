@@ -4,7 +4,7 @@
 <h3>{{ message }}</h3>
 
 <address>
-    <h1>Some text</h1>
-      <p>Every year, the brightest web designers and frontend developers gather in Chicago
-        to discuss the latest technologies. Join us this August!</p>
+    <img width="100" height="100" src="https://avatars.githubusercontent.com/u/81965397?v=4">
+    <h1>Hatemsla</h1>
+      <p>Big boyyyy</p>
 </address>
