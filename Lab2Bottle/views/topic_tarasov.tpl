@@ -1,23 +1,18 @@
 <link rel="stylesheet" href="/static/content/style_for_personal_page.css">
+<link rel="stylesheet" href="/static/content/site.css">
 <link rel="stylesheet" href="/static/content/bootstrap.css">
 <div class="wrapper" style="margin-top:50px">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Application name</a>
-            </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul>
+                    <li><a class="logo" href="/"><img height="30" width="30" src="static\images\logo_team.jpg"/></a></li>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
-                    <li><a href="/topic_tarasov">topic_tarasov</a></li>
+                    <li><a href="/topic_tarasov">Tarasov Nikita</a></li>
+                    <li><a href="/topic_kalashnikov">Kalashnikov Jan</a></li>
+                    <li><a href="/topic_rykhlov">Rykhlov Kirill</a></li>
                 </ul>
             </div>
         </div>
@@ -28,8 +23,8 @@
         <img src="https://i.imgur.com/zh9eNsh.jpg">
       </div>
       <div class="bio">
-        <h1 class="name">Тарасов Никита Вячеславович</h1>
-        <p class="profession">Многофункциональный разработчик</p>
+        <h1 class="name">Tarasov Nikita Vyacheslavovich</h1>
+        <p class="profession">Multifunctional developer</p>
       </div>
     </div>
     <div class="intro-section about">
@@ -48,7 +43,7 @@
       </div>
       <div class="info-section">
         <i class="fas fa-map-marker-alt"></i>
-        <span>Россия, СПб</span>
+        <span>Russia, St. Petersburg</span>
       </div>
       <div class="info-section">
         <i class="fas fa-paper-plane"></i>
@@ -77,17 +72,17 @@
         <div class="title-icon">
           <i class="fas fa-user-graduate"></i>
         </div>
-        <span>Образование</span>
+        <span>Education</span>
       </div>
       <div class="detail-content">
         <div class="timeline-block">
-          <h1>Средняя общеобразовательная школа № 252</h1>
-          <p>Государственное бюджетное общеобразовательное учреждение Красносельского района Санкт-Петербурга</p>
+          <h1>Secondary school No. 252</h1>
+          <p>State Budgetary Educational Institution of Krasnoselsky district of St. Petersburg</p>
           <time>2011 - 2020</time>
         </div>
         <div class="timeline-block">
-          <h1>Факультет среднего профессионального образования ГУАП</h1>
-          <p>Федеральное государственное автономное образовательное учреждение высшего образования «Санкт-Петербургский государственный университет аэрокосмического приборостроения»</p>
+          <h1>Faculty of Secondary Vocational Education GUAP</h1>
+          <p>Federal State Autonomous Educational Institution of Higher Education "Saint Petersburg State University of Aerospace Instrumentation"</p>
           <time>2020 - present</time>
         </div>
       </div>
