@@ -22,7 +22,7 @@ def contact():
     """Renders the contact page."""
     return dict(
         title='Contact',
-        message='Our contacts',
+        message='Your contact page.',
         year=datetime.now().year
     )
 
@@ -32,7 +32,7 @@ def about():
     """Renders the about page."""
     return dict(
         title='About',
-        message='Summary',
+        message='Your application description page.',
         year=datetime.now().year
     )
 

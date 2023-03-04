@@ -8,6 +8,6 @@
     <h1>Hatemsla</h1>
     <p>Big boyyyy</p>
     <div>
-        <p><a class="btn btn-default" href="https://github.com/Hatemsla">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://github.com/Hatemsla">Узнать больше &raquo;</a></p>
     </div>
 </address>
