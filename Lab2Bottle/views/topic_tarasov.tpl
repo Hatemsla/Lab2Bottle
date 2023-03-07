@@ -1,22 +1,8 @@
+% rebase('layout.tpl', title=title, year=year)
+
 <link rel="stylesheet" href="/static/content/style_for_personal_page.css">
-<link rel="stylesheet" href="/static/content/site.css">
-<link rel="stylesheet" href="/static/content/bootstrap.css">
+
 <div class="wrapper" style="margin-top:50px">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-collapse collapse">
-                <ul>
-                    <li><a class="logo" href="/"><img height="30" width="30" src="static\images\logo_team.jpg"/></a></li>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/topic_tarasov">Tarasov Nikita</a></li>
-                    <li><a href="/topic_kalashnikov">Kalashnikov Jan</a></li>
-                    <li><a href="/topic_rykhlov">Rykhlov Kirill</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
   <div class="intro">
     <div class="profile">
       <div class="photo">
@@ -92,49 +78,48 @@
         <div class="title-icon">
           <i class="fas fa-laptop-code"></i>
         </div>
-        <span>Навыки программирования</span>
+        <span>Programming skills</span>
       </div>
       <div class="detail-content">
         <ul class="pg-list">
-            <li>
-            <span>C# core</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">C# core</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 90%"></div>
             </div>
             </li>
-            <li>
-            <span>WPF</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">WPF</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 70%"></div>
             </div>
             </li>
-            <li>
-            <span>SQL</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">SQL</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 60%"></div>
             </div>
             </li>
-            <li>
-            <span>Python3</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">Python3</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 20%"></div>
             </div>
             </li>
-            <li>
-            <li>
-            <span>Java</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">Java</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 10%"></div>
             </div>
             </li>
-            <li>
-            <span>HTML5</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">HTML5</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 10%"></div>
             </div>
             </li>
-            <li>
-            <span>CSS3</span>
+            <li class="pg-list-li">
+            <span class="pg-list-li-span">CSS3</span>
             <div class="sb-skeleton">
                 <div class="skillbar" style="--pgbar-length: 7%"></div>
             </div>
@@ -147,7 +132,7 @@
         <div class="title-icon">
           <i class="fas fa-tools"></i>
         </div>
-        <span>Инструменты разработки</span>
+        <span>Development Tools</span>
       </div>
       <div class="detail-content">
         <ul class="tool-list">
@@ -157,15 +142,13 @@
               <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
             </svg>
             <span class="tl-name">Visual Studio</span>
-            <span class="tl-exp">60%</span>
           </li>
           <li>
             <svg viewbox="0 0 100 100">
               <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
+              <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.55"></circle>
             </svg>
             <span class="tl-name">Visual Studio Code</span>
-            <span class="tl-exp">55%</span>
           </li>
           <li>
             <svg viewbox="0 0 100 100">
@@ -222,11 +205,5 @@
       </div>
     </div>
   </div>
-</div>
-<div class="container body-content">
-        <hr />
-        <footer>
-            <p>&copy; {{ year }} - Team summury</p>
-        </footer>
 </div>
 

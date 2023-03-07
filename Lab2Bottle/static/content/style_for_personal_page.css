@@ -32,7 +32,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 100rem;
     background-color: var(--color-gray-light-2);
     display: flex;
     box-shadow: 0px 0px 15px 4px #b3b3b3;
@@ -163,7 +163,7 @@ body {
     }
 
 .detail-title {
-    display: ftool-skilllex;
+    display: flex;
     align-items: center;
 }
 
@@ -273,11 +273,11 @@ body {
     list-style: none;
 }
 
-    .pg-list > li {
-        margin: 1rem 0;
-        display: flex;
-        align-items: center;
-    }
+.pg-list-li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
 
 .sb-skeleton {
     position: relative;
@@ -286,7 +286,7 @@ body {
     background-color: var(--color-gray-dark-3);
 }
 
-.pg-list > li > span {
+.pg-list-li-span {
     flex: 0 0 100px;
 }
 

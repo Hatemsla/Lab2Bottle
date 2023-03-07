@@ -41,7 +41,7 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-ul {
+.ulmenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ ul {
     vertical-align: middle;
 }
 
-li {
+.limenu  {
     float: left;
 }
 
