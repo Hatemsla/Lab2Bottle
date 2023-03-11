@@ -10,34 +10,34 @@
         <img src="https://avatars.githubusercontent.com/u/81965397?v=4">
       </div>
       <div class="bio">
-        <h1 class="name">Kalashnikov Jan Ruslanovich</h1>
-        <p class="profession">Multifunctional developer</p>
+        <h1 class="name">Калашников Ян Русланович</h1>
+        <p class="profession">Многофункциональный разработчик</p>
       </div>
     </div>
     <div class="intro-section about">
-      <h1 class="title">about me</h1>
+      <h1 class="title">About me</h1>
       <p class="paragraph">
-        Hi, I'am Kalashnikov Jan!
-        Hi everyone, I am a web front-end developer, graduated from NTHU, Taiwan and my major is CS. I recently try my
-        best to improve my skills on web front-end. My favorite thing is to observe others' portfolio.
+        Привет, Я Калашников Ян!
+        Всем привет, я unity-разработчик, я учусь в ГУАПе, и моя специальность - программист. Недавно я попробовал
+        улучшить свои навыки работы с веб-интерфейсом. Мое любимое занятие - наблюдать за портфолио других людей.
       </p>
     </div>
     <div class="intro-section contact">
       <h1 class="title">Contact</h1>
       <div class="info-section">
-        <i class="fa fa-phone"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg">
         <span>+7-965-582-08-60</span>
       </div>
       <div class="info-section">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Russia, St. Petersburg</span>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\location-dot-solid.svg">
+        <span>Россия, Санкт-Петербург</span>
       </div>
       <div class="info-section">
-        <i class="fas fa-paper-plane"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\envelope-solid.svg">
         <span>kalashnikovjan@yandex.ru</span>
       </div>
       <div class="info-section link">
-        <i class="fab fa-facebook"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\vk.svg">
         <a target="_blank" rel="author" href="https://vk.com/jan_47">
           <span>VK</span>
         </a>
@@ -46,7 +46,7 @@
     <div class="intro-section follow">
       <h1 class="title">Follow</h1>
       <div class="info-section link">
-        <i class="fab fa-github"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/Hatemsla">
           <span>GitHub: Hatemsla</span>
         </a>
@@ -57,29 +57,29 @@
     <div class="detail-section edu">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-user-graduate"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\user-graduate-solid.svg">
         </div>
-        <span>Education</span>
+        <span>Образование</span>
       </div>
       <div class="detail-content">
         <div class="timeline-block">
-          <h1>Gymnasium No. 3</h1>
-          <p>Municipal budgetary educational institution "Gymnasium No. 3 of the Zelenodolsk municipal district of the Republic of Tatarstan"</p>
+          <h1>Гимназия №3</h1>
+          <p>Муниципальное бюджетное образовательное учреждение "Гимназия № 3 Зеленодольского муниципального района Республики Татарстан"</p>
           <time>2011 - 2020</time>
         </div>
         <div class="timeline-block">
-          <h1>Faculty of Secondary Vocational Education GUAP</h1>
-          <p>Federal State Autonomous Educational Institution of Higher Education "Saint Petersburg State University of Aerospace Instrumentation"</p>
-          <time>2020 - present</time>
+          <h1>Факультет среднего профессионального образования ГУАП</h1>
+          <p>Федеральное государственное автономное образовательное учреждение высшего профессионального образования "Санкт-Петербургский государственный университет аэрокосмического приборостроения"</p>
+          <time>2020 - наши дни</time>
         </div>
       </div>
     </div>
     <div class="detail-section pg-skill">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-laptop-code"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\laptop-code-solid.svg">
         </div>
-        <span>Programming skills</span>
+        <span>Навыки программирования</span>
       </div>
       <div class="detail-content">
         <ul class="pg-list">
@@ -131,9 +131,9 @@
     <div class="detail-section tool-skill">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-tools"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\screwdriver-wrench-solid.svg">
         </div>
-        <span>Development Tools</span>
+        <span>Инструменты разработки</span>
       </div>
       <div class="detail-content">
         <ul class="tool-list">
@@ -172,32 +172,32 @@
     <div class="detail-section interests">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-heart"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\heart-solid.svg">
         </div>
-        <span>Interests</span>
+        <span>Интересы</span>
       </div>
       <div class="detail-content">
         <div class="outer-frame">
           <ul class="favor-list">
             <li>
-              <i class="fas fa-gamepad"></i>
-              <span>Games</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\gamepad-solid.svg">
+              <span>Игры</span>
             </li>
             <li>
-              <i class="fas fa-paw"></i>
-              <span>Music</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\music-solid.svg">
+              <span>Музыка</span>
             </li>
             <li>
-              <i class="far fa-headphones-alt"></i>
-              <span>Game development</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\unity.svg">
+              <span>Unity</span>
             </li>
             <li>
-              <i class="fas fa-book-spells"></i>
-              <span>Self-study</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\book-solid.svg">
+              <span>Самообучение</span>
             </li>
             <li>
-              <i class="fas fa-user-edit"></i>
-              <span>Sport</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\person-running-solid.svg">
+              <span>Спорт</span>
             </li>
           </ul>
         </div>

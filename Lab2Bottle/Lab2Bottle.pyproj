@@ -58,6 +58,7 @@
     <Content Include="static\images\icon\drone-svgrepo-com.svg" />
     <Content Include="static\images\icon\envelope-solid.svg" />
     <Content Include="static\images\icon\gamepad-solid.svg" />
+    <Content Include="static\images\icon\github.svg" />
     <Content Include="static\images\icon\heart-solid.svg" />
     <Content Include="static\images\icon\laptop-code-solid.svg" />
     <Content Include="static\images\icon\location-dot-solid.svg" />
@@ -65,6 +66,7 @@
     <Content Include="static\images\icon\person-running-solid.svg" />
     <Content Include="static\images\icon\phone-solid.svg" />
     <Content Include="static\images\icon\screwdriver-wrench-solid.svg" />
+    <Content Include="static\images\icon\unity.svg" />
     <Content Include="static\images\icon\user-graduate-solid.svg" />
     <Content Include="static\images\icon\vk.svg" />
     <Content Include="static\images\logo_team.jpg" />
