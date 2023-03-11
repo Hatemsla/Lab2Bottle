@@ -1,3 +1,4 @@
+
 :root {
     --color-gray-light-1: #f8f8f8;
     --color-gray-light-2: #e9e9e9;
@@ -347,7 +348,7 @@ body {
         }
 
         .tool-list > li > .tl-name {
-            top: 50%;
+            top: 40%;
             font-size: 1.2rem;
             transform: translate(-50%, -50%);
         }
@@ -463,4 +464,11 @@ body {
     html {
         font-size: 70%;
     }
+}
+
+.color-icon-blue {
+    filter: invert(52%) sepia(20%) saturate(1274%) hue-rotate(169deg) brightness(88%) contrast(93%);
+}
+.color-icon-white {
+    filter: invert(100%) sepia(22%) saturate(90%) hue-rotate(28deg) brightness(116%) contrast(100%);
 }

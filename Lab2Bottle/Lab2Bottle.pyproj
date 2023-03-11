@@ -37,6 +37,7 @@
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\images\icon\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -53,6 +54,19 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\icon\book-solid.svg" />
+    <Content Include="static\images\icon\drone-svgrepo-com.svg" />
+    <Content Include="static\images\icon\envelope-solid.svg" />
+    <Content Include="static\images\icon\gamepad-solid.svg" />
+    <Content Include="static\images\icon\heart-solid.svg" />
+    <Content Include="static\images\icon\laptop-code-solid.svg" />
+    <Content Include="static\images\icon\location-dot-solid.svg" />
+    <Content Include="static\images\icon\music-solid.svg" />
+    <Content Include="static\images\icon\person-running-solid.svg" />
+    <Content Include="static\images\icon\phone-solid.svg" />
+    <Content Include="static\images\icon\screwdriver-wrench-solid.svg" />
+    <Content Include="static\images\icon\user-graduate-solid.svg" />
+    <Content Include="static\images\icon\vk.svg" />
     <Content Include="static\images\logo_team.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />

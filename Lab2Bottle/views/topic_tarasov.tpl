@@ -6,37 +6,35 @@
   <div class="intro">
     <div class="profile">
       <div class="photo">
-        <img src="https://i.imgur.com/zh9eNsh.jpg">
+        <img src="https://avatars.githubusercontent.com/u/89140653?v=4">
       </div>
       <div class="bio">
-        <h1 class="name">Tarasov Nikita Vyacheslavovich</h1>
-        <p class="profession">Multifunctional developer</p>
+        <h1 class="name">Тарасов Никита Вячеславович</h1>
+        <p class="profession">Многофункциональный разработчик</p>
       </div>
     </div>
     <div class="intro-section about">
       <h1 class="title">about me</h1>
       <p class="paragraph">
-        ������, � ������ �������!
-        Hi everyone, I am a web front-end developer, graduated from NTHU, Taiwan and my major is CS. I recently try my
-        best to improve my skills on web front-end. My favorite thing is to observe others' portfolio.
+       Всем привет, я backend разработчик, обучаюсь в ФСПО ГУАП на специальности: "Информационные системы и программирование". Чаще всего я разрабатываю приложение на C# core, но также пробую себя и в других направлениях.
       </p>
     </div>
     <div class="intro-section contact">
       <h1 class="title">Contact</h1>
       <div class="info-section">
-        <i class="fas fa-phone"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg"></img>
         <span>+7-965-721-07-66</span>
       </div>
       <div class="info-section">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Russia, St. Petersburg</span>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\location-dot-solid.svg"></img>
+        <span>Россия, Санкт-Петербруг</span>
       </div>
       <div class="info-section">
-        <i class="fas fa-paper-plane"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\envelope-solid.svg"></img>
         <span>nik601rus@yandex.ru</span>
       </div>
       <div class="info-section link">
-        <i class="fab fa-facebook"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\vk.svg"></img>
         <a target="_blank" rel="author" href="https://vk.com/nik701rus">
           <span>VK</span>
         </a>
@@ -56,19 +54,19 @@
     <div class="detail-section edu">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-user-graduate"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\user-graduate-solid.svg"></img>
         </div>
-        <span>Education</span>
+        <span>Образование</span>
       </div>
       <div class="detail-content">
         <div class="timeline-block">
-          <h1>Secondary school No. 252</h1>
-          <p>State Budgetary Educational Institution of Krasnoselsky district of St. Petersburg</p>
+          <h1>Средняя школа № 252</h1>
+          <p>Государственное бюджетное образовательное учреждение Красносельского района Санкт-Петербурга</p>
           <time>2011 - 2020</time>
         </div>
         <div class="timeline-block">
-          <h1>Faculty of Secondary Vocational Education GUAP</h1>
-          <p>Federal State Autonomous Educational Institution of Higher Education "Saint Petersburg State University of Aerospace Instrumentation"</p>
+          <h1>Факультет среднего профессионального образования ГУАП</h1>
+          <p>Федеральное государственное автономное образовательное учреждение высшего профессионального образования "Санкт-Петербургский государственный университет аэрокосмического приборостроения"</p>
           <time>2020 - present</time>
         </div>
       </div>
@@ -76,9 +74,9 @@
     <div class="detail-section pg-skill">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-laptop-code"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\laptop-code-solid.svg"></img>
         </div>
-        <span>Programming skills</span>
+        <span>Навыки программирования</span>
       </div>
       <div class="detail-content">
         <ul class="pg-list">
@@ -130,18 +128,19 @@
     <div class="detail-section tool-skill">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-tools"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\screwdriver-wrench-solid.svg"></img>
         </div>
-        <span>Development Tools</span>
+        <span>Инструменты разработки</span>
       </div>
       <div class="detail-content">
         <ul class="tool-list">
           <li>
             <svg viewbox="0 0 100 100">
               <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
+              <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
             </svg>
             <span class="tl-name">Visual Studio</span>
+            <span class="tl-exp">70%</span>
           </li>
           <li>
             <svg viewbox="0 0 100 100">
@@ -149,6 +148,7 @@
               <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.55"></circle>
             </svg>
             <span class="tl-name">Visual Studio Code</span>
+            <span class="tl-exp">55%</span>
           </li>
           <li>
             <svg viewbox="0 0 100 100">
@@ -173,32 +173,32 @@
     <div class="detail-section interests">
       <div class="detail-title">
         <div class="title-icon">
-          <i class="fas fa-heart"></i>
+          <img class="color-icon-white" width="20" height="20" src="\static\images\icon\heart-solid.svg"></img>
         </div>
-        <span>Interests</span>
+        <span>Увлечения</span>
       </div>
       <div class="detail-content">
         <div class="outer-frame">
           <ul class="favor-list">
             <li>
-              <i class="fas fa-gamepad"></i>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\drone-svgrepo-com.svg"></img>
               <span>FPV</span>
             </li>
             <li>
-              <i class="fas fa-paw"></i>
-              <span>������</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\music-solid.svg"></img>
+              <span>Музыка</span>
             </li>
             <li>
-              <i class="far fa-headphones-alt"></i>
-              <span>Music</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\book-solid.svg"></img>
+              <span>Самообучение</span>
             </li>
             <li>
-              <i class="fas fa-book-spells"></i>
-              <span>������������</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\person-running-solid.svg"></img>
+              <span>Спорт</span>
             </li>
             <li>
-              <i class="fas fa-user-edit"></i>
-              <span>Blog</span>
+              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\gamepad-solid.svg"></img>
+              <span>ПК игры</span>
             </li>
           </ul>
         </div>
