@@ -1,6 +1,6 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<link rel="stylesheet" href="/static/content/style_for_personal_page.css">
+<link rel="stylesheet" href="/static/content/style_yan_page.css">
 <link rel="stylesheet" href="/static/content/font-awesome.css">
 
 <div class="wrapper" style="margin-top:50px">
@@ -25,19 +25,19 @@
     <div class="intro-section contact">
       <h1 class="title">Contact</h1>
       <div class="info-section">
-        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg">
+        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\phone-solid.svg">
         <span>+7-965-582-08-60</span>
       </div>
       <div class="info-section">
-        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\location-dot-solid.svg">
+        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\location-dot-solid.svg">
         <span>Россия, Санкт-Петербург</span>
       </div>
       <div class="info-section">
-        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\envelope-solid.svg">
+        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\envelope-solid.svg">
         <span>kalashnikovjan@yandex.ru</span>
       </div>
       <div class="info-section link">
-        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\vk.svg">
+        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\vk.svg">
         <a target="_blank" rel="author" href="https://vk.com/jan_47">
           <span>VK</span>
         </a>
@@ -46,7 +46,7 @@
     <div class="intro-section follow">
       <h1 class="title">Follow</h1>
       <div class="info-section link">
-        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\github.svg">
+        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/Hatemsla">
           <span>GitHub: Hatemsla</span>
         </a>
@@ -180,23 +180,23 @@
         <div class="outer-frame">
           <ul class="favor-list">
             <li>
-              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\gamepad-solid.svg">
+              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\gamepad-solid.svg">
               <span>Игры</span>
             </li>
             <li>
-              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\music-solid.svg">
+              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\music-solid.svg">
               <span>Музыка</span>
             </li>
             <li>
-              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\unity.svg">
+              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\unity.svg">
               <span>Unity</span>
             </li>
             <li>
-              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\book-solid.svg">
+              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\book-solid.svg">
               <span>Самообучение</span>
             </li>
             <li>
-              <img class="color-icon-blue" width="40" height="40" src="\static\images\icon\person-running-solid.svg">
+              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\person-running-solid.svg">
               <span>Спорт</span>
             </li>
           </ul>

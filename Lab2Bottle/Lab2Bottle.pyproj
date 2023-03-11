@@ -50,6 +50,7 @@
     <Content Include="static\content\pro.min.css" />
     <Content Include="static\content\site.css" />
     <Content Include="static\content\style_for_personal_page.css" />
+    <Content Include="static\content\style_yan_page.css" />
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
