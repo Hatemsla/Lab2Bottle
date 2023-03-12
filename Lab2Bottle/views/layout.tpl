@@ -14,7 +14,7 @@
         <div class="container">
             <div class="navbar-collapse collapse">
                 <ul class="ulmenu">
-                    <li class="limenu"><a class="logo" href="/"><img height="30" width="30" src="static\images\logo_team.jpg"/></a></li>
+                    <li class="limenu"><a class="logo" href="/"><img height="30" width="30" src="static\images\logo_team.png"/></a></li>
                     <li class="limenu"><a href="/home">Главная</a></li>
                     <li class="limenu"><a href="/topic_tarasov">Тарасов Никита</a></li>
                     <li class="limenu"><a href="/topic_kalashnikov">Калашников Ян</a></li>

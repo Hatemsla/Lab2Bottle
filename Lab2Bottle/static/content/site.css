@@ -70,3 +70,8 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}

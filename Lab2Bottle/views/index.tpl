@@ -1,8 +1,9 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
 <div class="jumbotron">
-    <h1>Командное резюме</h1>
+    <h1>Резюме команды</h1>
     <p class="lead">На данном сайте представлено описание членов нашей команды в виде тематического резюме.</p>
+    <img class="marginauto" src="\static\images\avatar_team.jpg" alt="Аватар команды"></img>
     <p><a href="https://github.com/Hatemsla/Lab2Bottle" class="btn btn-primary btn-large">Узнать больше &raquo;</a></p>
 
 </div>

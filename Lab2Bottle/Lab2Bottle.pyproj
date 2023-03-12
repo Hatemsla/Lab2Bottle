@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>Lab2Bottle</Name>
     <RootNamespace>Lab2Bottle</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3.10|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +55,7 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\avatar_team.jpg" />
     <Content Include="static\images\icon\book-solid.svg" />
     <Content Include="static\images\icon\drone-svgrepo-com.svg" />
     <Content Include="static\images\icon\envelope-solid.svg" />
@@ -70,7 +71,7 @@
     <Content Include="static\images\icon\unity.svg" />
     <Content Include="static\images\icon\user-graduate-solid.svg" />
     <Content Include="static\images\icon\vk.svg" />
-    <Content Include="static\images\logo_team.jpg" />
+    <Content Include="static\images\logo_team.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
