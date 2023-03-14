@@ -25,19 +25,19 @@
     <div class="intro-section contact">
       <h1 class="title">Contact</h1>
       <div class="info-section">
-        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\phone-solid.svg">
+        <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\phone-solid.svg">
         <span>+7-910-718-54-68</span>
       </div>
       <div class="info-section">
-        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\location-dot-solid.svg">
+        <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\location-dot-solid.svg">
         <span>Россия, Санкт-Петербург</span>
       </div>
       <div class="info-section">
-        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\envelope-solid.svg">
+        <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\envelope-solid.svg">
         <span>kirotron2002@mail.ru</span>
       </div>
       <div class="info-section link">
-        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\vk.svg">
+        <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\vk.svg">
         <a target="_blank" rel="author" href="https://vk.com/kirushaaxd">
           <span>VK</span>
         </a>
@@ -46,7 +46,7 @@
     <div class="intro-section follow">
       <h1 class="title">Follow</h1>
       <div class="info-section link">
-        <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\github.svg">
+        <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/kirushaaxd">
           <span>GitHub: kirushaaxd</span>
         </a>
@@ -180,23 +180,23 @@
         <div class="outer-frame">
           <ul class="favor-list">
             <li>
-              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\music-solid.svg">
+              <img class="color-icon-violet" width="40" height="40" src="\static\images\icon\music-solid.svg">
               <span>Музыка</span>
             </li>
             <li>
-              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\gamepad-solid.svg">
+              <img class="color-icon-violet" width="40" height="40" src="\static\images\icon\gamepad-solid.svg">
               <span>Игры</span>
             </li>
             <li>
-              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\book-open-solid.svg">
+              <img class="color-icon-violet" width="40" height="40" src="\static\images\icon\book-open-solid.svg">
               <span>Чтение</span>
             </li>
             <li>
-              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\umbrella-beach-solid.svg">
+              <img class="color-icon-violet" width="40" height="40" src="\static\images\icon\umbrella-beach-solid.svg">
               <span>Отдых</span>
             </li>
             <li>
-              <img class="color-icon-orange" width="40" height="40" src="\static\images\icon\youtube.svg">
+              <img class="color-icon-violet" width="40" height="40" src="\static\images\icon\youtube.svg">
               <span>Сериалы</span>
             </li>
           </ul>
