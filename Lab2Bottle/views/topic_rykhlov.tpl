@@ -1,6 +1,6 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<link rel="stylesheet" href="/static/content/style_yan_page.css">
+<link rel="stylesheet" href="/static/content/style_kirushaaxd_page.css">
 <link rel="stylesheet" href="/static/content/font-awesome.css">
 
 <div class="wrapper" style="margin-top:50px">

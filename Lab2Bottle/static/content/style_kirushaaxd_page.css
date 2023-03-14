@@ -6,10 +6,10 @@
     --color-gray-dark-1: #545454;
     --color-gray-dark-2: #737373;
     --color-gray-dark-3: #9a9a9a;
-    --color-blue-dark-1: #00387f;
-    --color-tiffany: #00a6a6;
-    --profile-theme: #d76f1c;
-    --timeline-circle-theme: #14253e;
+    --color-blue-dark-1: #6B4978f;
+    --color-tiffany: #6B4978;
+    --profile-theme: #6B4978;
+    --timeline-circle-theme: #6B4978;
     --pgbar-length: 100%;
     --MATH-PI: 3.1415px;
     --percent: 100;
@@ -467,10 +467,10 @@ body {
 }
 
 .color-icon-orange {
-    filter: invert(52%) sepia(66%) saturate(2207%) hue-rotate(353deg) brightness(90%) contrast(87%);
+    filter: invert(29%) sepia(40%) saturate(546%) hue-rotate(239deg) brightness(96%) contrast(89%);
 }
 
 .color-icon-white {
-    filter: invert(100%) sepia(22%) saturate(90%) hue-rotate(28deg) brightness(116%) contrast(100%);
+    filter: invert(32%) sepia(18%) saturate(1408%) hue-rotate(257deg) brightness(95%) contrast(85%);
 }
 
