@@ -43,7 +43,7 @@
     <div class="intro-section follow">
       <h1 class="title">Follow</h1>
       <div class="info-section link">
-        <i class="fab fa-github"></i>
+        <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/TNV-801">
           <span>GitHub: TNV-801</span>
         </a>
