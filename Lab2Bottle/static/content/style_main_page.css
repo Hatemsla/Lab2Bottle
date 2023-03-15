@@ -8,6 +8,23 @@ body {
   padding-bottom: 20px;
 }
 
+.button-bot {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+}
+
+.img-circle_kirusha {
+    border:10px solid #815991;
+}
+
+.img-circle_nikitka {
+    border:10px solid #4682bf;
+}
+
+.img-circle_yaya {
+    border:10px solid #d76f1c;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
