@@ -90,25 +90,24 @@
 		<!-- Three columns of text below the carousel -->
 		<div class="row">
 			<div class="col-lg-4">
-				<img class="img-circle" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111662/website_al6qpj.jpg" alt="Globe" width="140" height="140">
-				<h2>Ryhlov</h2>
-				<p>Our Developers specialize in every facet of the application process, this allows us to support a larger number of projects.</p>
-				<p><a class="btn btn-default" href="/topic_rykhlov" role="button">View details &raquo;</a></p>
+				<img class="img-circle" src="static/images/kirushaaxd.jpeg" alt="Globe" width="140" height="140">
+				<h2>Рызлов Кирилл</h2>
+				<p>Главный лентяй и создатель схем.</p>
+				<p><a class="btn btn-default" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 			<div class="col-lg-4">
-				<img class="img-circle" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111656/tech_ejgji3.jpg" alt="Computer" width="140" height="140">
-				<h2>Kalashnikov</h2>
-				<p>Sys-Admins specialize in setting up and administrating networks, databases, and the applications that utelize them.</p>
-				<p><a class="btn btn-default" href="/topic_kalashnikov" role="button">View details &raquo;</a></p>
+				<img class="img-circle" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Computer" width="140" height="140">
+				<h2>Тарасов Никита</h2>
+				<p>Главный ломатель коммитов и дронер.</p>
+				<p><a class="btn btn-default" href="/topic_kalashnikov" role="button">Подробнее &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 			<div class="col-lg-4">
-				<img class="img-circle" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111659/idea_kdgaws.jpg" alt="Phone" width="140" height="140">
-				<h2>Tarasov</h2>
-				<p>we develop mobile apps for both Android and Apple products, we can improve upon already built apps or design new apps from the ground up.</p>
-				<p><a class="btn btn-default" href="/topic_tarasov" role="button">View details &raquo;</a></p>
+				<img class="img-circle" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Phone" width="140" height="140">
+				<h2>Калашников Ян</h2>
+				<p>Создатель репозитория и главный технический специалсит в области Git.</p>
+				<p><a class="btn btn-default" href="/topic_tarasov" role="button">Подробнее &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 		</div><!-- /.row -->
-
 
 		<!-- /END THE FEATURETTES -->
 
