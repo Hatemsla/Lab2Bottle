@@ -3,9 +3,10 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-  padding-bottom: 20px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    background-color: #dedede;
+    padding-bottom: 20px;
 }
 
 .button-bot {
@@ -75,7 +76,6 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 600px;
 }
 
 
@@ -146,11 +146,26 @@ body {
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    /*margin-top: 120px;*/
-  }
+    .featurette-heading {
+        /*margin-top: 120px;*/
+    }
 }
 
 .img-rounded.img-responsive.center-block {
   width: 500px;
+}
+
+
+.image-person img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease; 
+    -o-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+.image-person:hover img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
