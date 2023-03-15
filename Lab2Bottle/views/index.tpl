@@ -31,7 +31,7 @@
 						<div class="carousel-caption">
 							<h1>Наша команда</h1>
 							<p>Молодая команда перспективных разработчиков.</p>
-							<p><a class="btn btn-lg btn-primary" href="https://github.com/Hatemsla/Lab2Bottle" role="button">Наш проект</a></p>
+							<p><a class="btn btn-lg btn-primary button-bot" href="https://github.com/Hatemsla/Lab2Bottle" role="button">Наш проект</a></p>
 						</div>
 					</div>
 				</div>
@@ -41,7 +41,7 @@
 						<div class="carousel-caption">
 							<h1>Наша команда</h1>
 							<p>Программирует на таких языках как: C#, C++, Python, Java и др.</p>
-							<p><a class="btn btn-lg btn-primary" href="https://github.com/TNV-801" role="button">Никита</a></p>
+							<p><a class="btn btn-lg btn-primary button-bot" href="https://github.com/TNV-801" role="button">Никита</a></p>
 						</div>
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 						<div class="carousel-caption">
 							<h1>Наша команда</h1>
 							<p>Занимается проектировкой баз данных, в частности используем MySQL, SQLite и PostgreSQL.</p>
-							<p><a class="btn btn-lg btn-primary" href="https://github.com/Hatemsla" role="button">Ян</a></p>
+							<p><a class="btn btn-lg btn-primary button-bot" href="https://github.com/Hatemsla" role="button">Ян</a></p>
 						</div>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<div class="carousel-caption">
 							<h1>Наша команда</h1>
 							<p>Любит всячески равзлекаться, вкусно кушать и ходить на страшные квесты.</p>
-							<p><a class="btn btn-lg btn-primary" href="https://github.com/kirushaaxd" role="button">Кирилл</a></p>
+							<p><a class="btn btn-lg btn-primary button-bot" href="https://github.com/kirushaaxd" role="button">Кирилл</a></p>
 						</div>
 					</div>
 				</div>
@@ -81,22 +81,22 @@
 
 		<div class="row">
 			<div class="col-lg-4">
-				<img class="img-circle" src="static/images/kirushaaxd.jpeg" alt="Рыхлов Кирилл" width="140" height="140">
+				<img class="img-circle img-circle_kirusha" src="static/images/kirushaaxd.jpeg" alt="Рыхлов Кирилл" width="200" height="200">
 				<h2>Рыхлов Кирилл</h2>
 				<p>Главный лентяй и создатель схем.</p>
-				<p><a class="btn btn-default" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>
+				<p><a class="btn btn-default button-bot" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>
 			</div>
 			<div class="col-lg-4">
-				<img class="img-circle" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Тарасов Никита" width="140" height="140">
+				<img class="img-circle img-circle_nikitka" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Тарасов Никита" width="200" height="200">
 				<h2>Тарасов Никита</h2>
 				<p>Главный ломатель коммитов и дронер.</p>
-				<p><a class="btn btn-default" href="/topic_kalashnikov" role="button">Подробнее &raquo;</a></p>
+				<p><a class="btn btn-default button-bot" href="/topic_kalashnikov" role="button">Подробнее &raquo;</a></p>
 			</div>
 			<div class="col-lg-4">
-				<img class="img-circle" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Калашников Ян" width="140" height="140">
+				<img class="img-circle img-circle_yaya" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Калашников Ян" width="200" height="200">
 				<h2>Калашников Ян</h2>
 				<p>Создатель репозитория и главный технический специалсит в области Git.</p>
-				<p><a class="btn btn-default" href="/topic_tarasov" role="button">Подробнее &raquo;</a></p>
+				<p><a class="btn btn-default button-bot" href="/topic_tarasov" role="button">Подробнее &raquo;</a></p>
 			</div>
 		</div>
 
