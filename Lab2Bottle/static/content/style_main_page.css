@@ -15,18 +15,6 @@ body {
       border-radius: 15px;
 }
 
-.img-circle_kirusha {
-    border:10px solid #815991;
-}
-
-.img-circle_nikitka {
-    border:10px solid #4682bf;
-}
-
-.img-circle_yaya {
-    border:10px solid #d76f1c;
-}
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -156,19 +144,51 @@ body {
 }
 
 
-.image-person img {
+.image-person-kirill img {
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease; 
-    -o-transition: all 1s ease; 
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
-.image-person:hover img {
+.image-person-kirill:hover img {
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
     -o-transform: scale(1.15);
     transform: scale(1.15);
+    outline: 10px solid #815991;
 }
+
+.image-person-jan img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.image-person-jan:hover img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    outline: 10px solid #d76f1c;
+}
+
+.image-person-nik img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.image-person-nik:hover img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    outline: 10px solid #4682bf;
+}
+
 
 .wrapper {
     margin: 0 auto;

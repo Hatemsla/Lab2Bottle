@@ -78,9 +78,9 @@
 
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="image-person">
+						<div class="image-person-kirill">
 							<a href="/topic_rykhlov">
-								<img class="img-circle img-circle_kirusha" src="static/images/kirushaaxd.jpeg" alt="Рыхлов Кирилл" width="200" height="200">
+								<img class="img-circle img-circle_kirusha" src="static/images/kirushaaxd.jpeg" alt="Рыхлов Кирилл" width="170" height="170">
 							</a>			
 						</div>		
 						<h2>Рыхлов Кирилл</h2>
@@ -88,18 +88,18 @@
 						<!--<p><a class="btn btn-default button-bot" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>-->
 					</div>
 					<div class="col-lg-4">
-						<div class="image-person">
+						<div class="image-person-nik">
 							<a href="/topic_tarasov">
-								<img class="img-circle img-circle_nikitka" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Тарасов Никита" width="200" height="200">
+								<img class="img-circle img-circle_nikitka" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Тарасов Никита" width="170" height="170">
 							</a>
 						</div>		
 						<h2>Тарасов Никита</h2>
 						<p class="about-person" >Главный ломатель коммитов и дронер.</p>
 					</div>
 					<div class="col-lg-4">
-						<div class="image-person">
+						<div class="image-person-jan">
 							<a href="/topic_kalashnikov">
-								<img class="img-circle img-circle_yaya" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Калашников Ян" width="200" height="200">
+								<img class="img-circle img-circle_yaya" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Калашников Ян" width="170" height="170">
 							</a>
 						</div>	
 						<h2>Калашников Ян</h2>
