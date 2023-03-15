@@ -71,6 +71,7 @@
     <Content Include="static\images\icon\unity.svg" />
     <Content Include="static\images\icon\user-graduate-solid.svg" />
     <Content Include="static\images\icon\vk.svg" />
+    <Content Include="static\images\kirushaaxd.jpeg" />
     <Content Include="static\images\logo_team.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />

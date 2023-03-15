@@ -80,24 +80,23 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<img class="img-circle" src="static/images/kirushaaxd.jpeg" alt="Globe" width="140" height="140">
-				<h2>Рызлов Кирилл</h2>
-				<p>Главный лентяй и создатель схем.</p>
-				<p><a class="btn btn-default" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>
+				<h2>Р С‹Р·Р»РѕРІ РљРёСЂРёР»Р»</h2>
+				<p>Р“Р»Р°РІРЅС‹Р№ Р»РµРЅС‚СЏР№ Рё СЃРѕР·РґР°С‚РµР»СЊ СЃС…РµРј.</p>
+				<p><a class="btn btn-default" href="/topic_rykhlov" role="button">РџРѕРґСЂРѕР±РЅРµРµ &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 			<div class="col-lg-4">
 				<img class="img-circle" src="https://avatars.githubusercontent.com/u/89140653?v=4" alt="Computer" width="140" height="140">
-				<h2>Тарасов Никита</h2>
-				<p>Главный ломатель коммитов и дронер.</p>
-				<p><a class="btn btn-default" href="/topic_kalashnikov" role="button">Подробнее &raquo;</a></p>
+				<h2>РўР°СЂР°СЃРѕРІ РќРёРєРёС‚Р°</h2>
+				<p>Р“Р»Р°РІРЅС‹Р№ Р»РѕРјР°С‚РµР»СЊ РєРѕРјРјРёС‚РѕРІ Рё РґСЂРѕРЅРµСЂ.</p>
+				<p><a class="btn btn-default" href="/topic_kalashnikov" role="button">РџРѕРґСЂРѕР±РЅРµРµ &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 			<div class="col-lg-4">
 				<img class="img-circle" src="https://avatars.githubusercontent.com/u/81965397?v=4" alt="Phone" width="140" height="140">
-				<h2>Калашников Ян</h2>
-				<p>Создатель репозитория и главный технический специалсит в области Git.</p>
-				<p><a class="btn btn-default" href="/topic_tarasov" role="button">Подробнее &raquo;</a></p>
+				<h2>РљР°Р»Р°С€РЅРёРєРѕРІ РЇРЅ</h2>
+				<p>РЎРѕР·РґР°С‚РµР»СЊ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ Рё РіР»Р°РІРЅС‹Р№ С‚РµС…РЅРёС‡РµСЃРєРёР№ СЃРїРµС†РёР°Р»СЃРёС‚ РІ РѕР±Р»Р°СЃС‚Рё Git.</p>
+				<p><a class="btn btn-default" href="/topic_tarasov" role="button">РџРѕРґСЂРѕР±РЅРµРµ &raquo;</a></p>
 			</div><!-- /.col-lg-4 -->
 		</div><!-- /.row -->
-
 
 		<!-- /END THE FEATURETTES -->
 
