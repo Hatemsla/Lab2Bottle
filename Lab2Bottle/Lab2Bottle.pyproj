@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>Lab2Bottle</Name>
     <RootNamespace>Lab2Bottle</RootNamespace>
-    <InterpreterId>MSBuild|env3.10|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +50,8 @@
     <Content Include="static\content\pro.min.css" />
     <Content Include="static\content\site.css" />
     <Content Include="static\content\style_for_personal_page.css" />
+    <Content Include="static\content\style_kirushaaxd_page.css" />
+    <Content Include="static\content\style_main_page.css" />
     <Content Include="static\content\style_yan_page.css" />
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
@@ -72,6 +74,10 @@
     <Content Include="static\images\icon\user-graduate-solid.svg" />
     <Content Include="static\images\icon\vk.svg" />
     <Content Include="static\images\logo_team.png" />
+    <Content Include="static\images\tri1.jpg" />
+    <Content Include="static\images\tri2.jpg" />
+    <Content Include="static\images\tri4.jpg" />
+    <Content Include="static\images\tri3.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />

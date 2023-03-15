@@ -26,35 +26,46 @@
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
 				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img class="first-slide" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111659/black_sgm8fg.png" alt="First slide">
+					<img class="first-slide" src="\static\images\tri1.jpg" alt="First slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Industry Leading</h1>
-							<p>Our Company offers development and support to bring your ideas into the 21st Century.</p>
-							<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse our Portfolio</a></p>
+							<h1>Наша команда</h1>
+							<p>Молодая команда перспективных разработчиков.</p>
+							<p><a class="btn btn-lg btn-primary" href="https://github.com/Hatemsla/Lab2Bottle" role="button">Наш проект</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="item">
-					<img class="second-slide" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111700/marketing_qzmf9n.jpg" alt="Second slide">
+					<img class="second-slide" src="\static\images\tri2.jpg" alt="Second slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Tips, tricks, and Reviews</h1>
-							<p>Our Blog is the place to find reviews, write-ups, and other info about the latest and greatest Web Stuff</p>
-							<p><a class="btn btn-lg btn-primary" href="https://codepen.io/tmontieth/full/YpBpXB/" role="button">Blog</a></p>
+							<h1>Наша команда</h1>
+							<p>Программирует на таких языках как: C#, C++, Python, Java и др.</p>
+							<p><a class="btn btn-lg btn-primary" href="https://github.com/TNV-801" role="button">Никита</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="item">
-					<img class="third-slide" src="https://res.cloudinary.com/djtzwpqga/image/upload/v1482111660/colors_ugmcfz.jpg" alt="Third slide">
+					<img class="third-slide" src="\static\images\tri3.jpg" alt="Third slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Full Stack Designs</h1>
-							<p>We support a large array of projects, offering consulting and development using today's best practices.</p>
-							<p><a class="btn btn-lg btn-primary" href="https://codepen.io/tmontieth/full/woNowv/" role="button">Contact Us</a></p>
+							<h1>Наша команда</h1>
+							<p>Занимается проектировкой баз данных, в частности используем MySQL, SQLite и PostgreSQL.</p>
+							<p><a class="btn btn-lg btn-primary" href="https://github.com/Hatemsla" role="button">Ян</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="fourth-slide" src="\static\images\tri4.jpg" alt="Fourth slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Наша команда</h1>
+							<p>Любит всячески равзлекаться, вкусно кушать и ходить на страшные квесты.</p>
+							<p><a class="btn btn-lg btn-primary" href="https://github.com/kirushaaxd" role="button">Кирилл</a></p>
 						</div>
 					</div>
 				</div>
