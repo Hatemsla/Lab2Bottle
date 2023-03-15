@@ -169,3 +169,13 @@ body {
     -o-transform: scale(1.15);
     transform: scale(1.15);
 }
+
+.wrapper {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px 4px #b3b3b3;
+}
+
+.about-person {
+    font-size: 18px;
+}
