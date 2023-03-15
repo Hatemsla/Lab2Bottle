@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="intro-section about">
-      <h1 class="title">About me</h1>
+      <h1 class="title">О себе</h1>
       <p class="paragraph">
         Привет, Я Калашников Ян!
         Всем привет, я unity-разработчик, я учусь в ГУАПе, и моя специальность - программист. Недавно я попробовал
@@ -23,7 +23,7 @@
       </p>
     </div>
     <div class="intro-section contact">
-      <h1 class="title">Contact</h1>
+      <h1 class="title">Контакты</h1>
       <div class="info-section">
         <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\phone-solid.svg">
         <span>+7-965-582-08-60</span>
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="intro-section follow">
-      <h1 class="title">Follow</h1>
+      <h1 class="title">Отслеживать</h1>
       <div class="info-section link">
         <img class="color-icon-orange" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/Hatemsla">

@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="intro-section about">
-      <h1 class="title">About me</h1>
+      <h1 class="title">О себе</h1>
       <p class="paragraph">
         Всем привет, я студент, учусь в ГУАПе на разработчика. Умею писать программы на разных языках,
           имею навыки работы с базами данных, дизайном. Моя работа - это мое хобби, мне
@@ -23,7 +23,7 @@
       </p>
     </div>
     <div class="intro-section contact">
-      <h1 class="title">Contact</h1>
+      <h1 class="title">Контакты</h1>
       <div class="info-section">
         <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\phone-solid.svg">
         <span>+7-910-718-54-68</span>
@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="intro-section follow">
-      <h1 class="title">Follow</h1>
+      <h1 class="title">Отслеживать</h1>
       <div class="info-section link">
         <img class="color-icon-violet" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/kirushaaxd">

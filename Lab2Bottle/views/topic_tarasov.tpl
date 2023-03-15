@@ -14,13 +14,13 @@
       </div>
     </div>
     <div class="intro-section about">
-      <h1 class="title">about me</h1>
+      <h1 class="title">О себе</h1>
       <p class="paragraph">
        Всем привет, я backend разработчик, обучаюсь в ФСПО ГУАП на специальности: "Информационные системы и программирование". Чаще всего я разрабатываю приложение на C# core, но также пробую себя и в других направлениях.
       </p>
     </div>
     <div class="intro-section contact">
-      <h1 class="title">Contact</h1>
+      <h1 class="title">Контакты</h1>
       <div class="info-section">
         <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg"></img>
         <span>+7-965-721-07-66</span>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="intro-section follow">
-      <h1 class="title">Follow</h1>
+      <h1 class="title">Отслеживать</h1>
       <div class="info-section link">
         <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\github.svg">
         <a target="_blank" rel="author" href="https://github.com/TNV-801">
