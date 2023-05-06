@@ -46,3 +46,13 @@ def about():
         message='Topic Rykhlov page',
         year=datetime.now().year
     )
+
+@route('/actual_novelties')
+@view('actual_novelties')
+def about():
+    """Renders the actual_novelties page."""
+    return dict(
+        title='Actual Novelties',
+        message='Actual Novelties page',
+        year=datetime.now().year
+    )

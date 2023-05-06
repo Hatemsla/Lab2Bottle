@@ -85,7 +85,6 @@
 						</div>		
 						<h2>Рыхлов Кирилл</h2>
 						<p class="about-person" >Главный лентяй и создатель схем.</p>
-						<!--<p><a class="btn btn-default button-bot" href="/topic_rykhlov" role="button">Подробнее &raquo;</a></p>-->
 					</div>
 					<div class="col-lg-4">
 						<div class="image-person-nik">
