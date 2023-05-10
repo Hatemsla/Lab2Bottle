@@ -49,6 +49,7 @@
     <Content Include="static\content\font-awesome.min.css" />
     <Content Include="static\content\pro.min.css" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\content\style_actual_novelties_page.css" />
     <Content Include="static\content\style_for_personal_page.css" />
     <Content Include="static\content\style_kirushaaxd_page.css" />
     <Content Include="static\content\style_main_page.css" />
