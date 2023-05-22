@@ -56,3 +56,13 @@ def about():
         message='Actual Novelties page',
         year=datetime.now().year
     )
+
+@route('/our_clients')
+@view('our_clients')
+def about():
+    """Renders the our_clients page."""
+    return dict(
+        title='Our clients',
+        message='Our clients page',
+        year=datetime.now().year
+    )

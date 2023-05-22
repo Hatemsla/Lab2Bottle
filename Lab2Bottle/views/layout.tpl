@@ -20,6 +20,7 @@
                     <li class="limenu"><a href="/topic_kalashnikov">Калашников Ян</a></li>
                     <li class="limenu"><a href="/topic_rykhlov">Рыхлов Кирилл</a></li>
                     <li class="limenu"><a href="/actual_novelties">Актуальные новинки</a></li>
+                    <li class="limenu"><a href="/our_clients">Наши клиенты</a></li>
                 </ul>
             </div>
         </div>
