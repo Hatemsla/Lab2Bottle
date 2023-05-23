@@ -7,6 +7,7 @@ Routes and views for the bottle application.
 from bottle import route, view
 from datetime import datetime
 
+
 @route('/')
 @route('/home')
 @view('index')
@@ -27,6 +28,7 @@ def about():
         year=datetime.now().year
     )
 
+
 @route('/topic_kalashnikov')
 @view('topic_kalashnikov')
 def about():
@@ -36,6 +38,7 @@ def about():
         message='Topic Kalashnikov page',
         year=datetime.now().year
     )
+
 
 @route('/topic_rykhlov')
 @view('topic_rykhlov')
@@ -47,6 +50,7 @@ def about():
         year=datetime.now().year
     )
 
+
 @route('/actual_novelties')
 @view('actual_novelties')
 def about():
@@ -57,6 +61,7 @@ def about():
         year=datetime.now().year
     )
 
+
 @route('/our_clients')
 @view('our_clients')
 def about():
@@ -64,5 +69,16 @@ def about():
     return dict(
         title='Our clients',
         message='Our clients page',
+        year=datetime.now().year
+    )
+
+
+@route('/reviews_page')
+@view('reviews_page')
+def about():
+    """Renders the our_clients page."""
+    return dict(
+        title='Reviews',
+        message='Reviews',
         year=datetime.now().year
     )
