@@ -4,7 +4,7 @@ Routes and views for the bottle application.
 
 # -*- coding: utf-8 -*-
 
-from bottle import route, view
+from bottle import route, view, request
 from datetime import datetime
 
 
@@ -69,7 +69,27 @@ def about():
     return dict(
         title='Our clients',
         message='Our clients page',
-        year=datetime.now().year
+        year=datetime.now().year,
+        data_clients=[],
+        data_new_client=[],
+        name_company="",
+        required_product=""
+    )
+
+@route('/our_clients_new_client')
+@view('our_clients_new_client')
+def about():
+    """Renders the our_clients page."""
+    name_company = request.forms.getunicode('name_company')
+    required_product = request.forms.getunicode('required_product')
+    return dict(
+        title='Our clients',
+        message='Our clients page',
+        year=datetime.now().year,
+        data_clients=[],
+        data_new_client=[],
+        name_company=name_company,
+        required_product=required_product
     )
 
 
