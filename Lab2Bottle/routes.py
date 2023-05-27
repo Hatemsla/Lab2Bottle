@@ -55,10 +55,14 @@ def about():
 @view('actual_novelties')
 def about():
     """Renders the actual_novelties page."""
+    now = datetime.now()
+    formatted_date = now.strftime("%d %b %Y")
+    formatted_time = now.strftime("%H:%M")
+    data_file_path = 'static/data/actual_novelties.json'
     return dict(
-        title='Actual Novelties',
-        message='Actual Novelties page',
-        year=datetime.now().year
+        data_file_path=data_file_path,
+        date=f"{formatted_date} в {formatted_time}",
+        year=now.year
     )
 
 
