@@ -16,12 +16,16 @@
             <div class="timeline-block">
                 <form action="/our_clients_new_client" method="post">
                     <div>
-                       <label for="name_company">Название организации:</label>
+                        <label for="name_company">Название организации:</label>
                         <input name="name_company" id="name_company" value="{{name_company}}" placeholder="Название организации" >
                     </div>
                     <div>
-                       <label for="required_product">Требуемый продукт</label>
+                        <label for="required_product">Требуемый продукт</label>
                         <input name="required_product" id="required_product" value="{{required_product}}" placeholder="Требуемый продукт" >
+                    </div>
+                    <label for="required_product">Требуемый продукт</label>
+                    <div>
+                        <input type="checkbox" name="required_product" id="required_product" value="{{required_product}}" placeholder="Требуемый продукт" >
                     </div>
                 </form>
             </div>
