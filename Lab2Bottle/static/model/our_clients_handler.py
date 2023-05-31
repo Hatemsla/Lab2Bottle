@@ -12,9 +12,8 @@ def user_data_processing():
     if name_company in data:
         orders = data[name_company]["orders"]
         for order in orders:
-            if order["product"] == required_product:
-                print("Ошибка: У компании", name_company, "уже есть заказ с продуктом", required_product)
-                return
+            if (order["product"]).lower() == required_product.lower():
+                return data, "Ошибка: У компании «" + name_company + "» уже есть заказ с продуктом «" + required_product + "»!"
         orders.append({"product": required_product, "technologies": technologies})
     else:
         data[name_company] = {
@@ -23,7 +22,7 @@ def user_data_processing():
             "email": email
         }
     write_to_file(data)
-    return data
+    return data, ""
 
 def technology_stack_formation():
     resultText = ""

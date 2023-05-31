@@ -77,21 +77,23 @@ def about():
         year=datetime.now().year,
         data_clients=data,
         name_company="",
-        required_product=""
+        required_product="",
+        text_error = ''
     )
 
 @route('/our_clients_new_client', method='post')
 @post('/our_clients_new_client', method='post')
 @view('our_clients')
 def about():
-    data = our_clients_handler.user_data_processing()
+    data, error = our_clients_handler.user_data_processing()
     return dict(
         title='Our clients',
         message='Our clients page',
         year=datetime.now().year,
         data_clients=data,
         name_company='',
-        required_product=''
+        required_product='',
+        text_error=error
     )
 
 
