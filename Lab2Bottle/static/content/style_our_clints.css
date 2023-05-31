@@ -46,45 +46,12 @@ body {
     z-index: 5;
 }
 
-.profile {
-    position: relative;
-    background-color: var(--profile-theme);
-    padding: 2rem 1rem;
-    margin-bottom: 50px;
-    text-align: center;
-    user-select: none;
-}
-
-    .profile::after {
-        content: " ";
-        position: absolute;
-        left: 0;
-        bottom: -15px;
-        width: 100%;
-        height: 30px;
-        background-color: var(--profile-theme);
-        transform: skewY(-5deg);
-    }
 
 .photo img {
     width: 80%;
     border-radius: 50%;
 }
 
-.bio .name {
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--color-gray-light-1);
-    margin: 0;
-    margin-top: 1rem;
-}
-
-.bio .profession {
-    font-size: 1rem;
-    text-align: center;
-    color: var(--color-gray-light-1);
-    margin: 0;
-}
 
 .intro-section {
     padding: 0 1rem;
@@ -97,10 +64,6 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
     }
-
-.about .paragraph {
-    text-align: justify;
-}
 
 .info-section {
     margin: 1rem 0;
@@ -228,10 +191,10 @@ body {
         transition: all 0.3s;
     }
 
-    .timeline-block p {
+    /*.timeline-block p {
         font-size: 0.8rem;
         margin: 5px 0;
-    }
+    }*/
 
     .timeline-block time {
         font-size: 0.8rem;
@@ -268,96 +231,7 @@ body {
         animation: circle 1.2s infinite;
     }
 
-/* Programming skills section */
-.pg-list, .tool-list, .favor-list {
-    padding: 0;
-    list-style: none;
-}
 
-.pg-list-li {
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-}
-
-.sb-skeleton {
-    position: relative;
-    flex: 1 0 auto;
-    height: 2px;
-    background-color: var(--color-gray-dark-3);
-}
-
-.pg-list-li-span {
-    flex: 0 0 100px;
-}
-
-.sb-skeleton > .skillbar {
-    position: absolute;
-    left: 0;
-    top: -1px;
-    width: var(--pgbar-length);
-    height: 4px;
-    background-color: var(--profile-theme);
-}
-
-.tool-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-    .tool-list > li {
-        position: relative;
-        text-align: center;
-        flex: 0 0 25%;
-    }
-
-        .tool-list > li > svg {
-            position: relative;
-            fill: transparent;
-            width: 95%;
-            transform: rotate(-90deg);
-        }
-
-            .tool-list > li > svg > circle {
-                stroke-width: 1px;
-                stroke: #cdcdcd;
-            }
-
-                .tool-list > li > svg > circle.cbar {
-                    stroke-width: 3px;
-                    stroke: var(--profile-theme);
-                    stroke-linecap: round;
-                    stroke-dashoffset: 0;
-                    stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
-                    transition: all 0.8s;
-                    transition-timing-function: cubic-bezier(.64,.51,.16,.86);
-                }
-
-        .tool-list > li:hover > svg > circle.cbar {
-            stroke-width: 4px;
-            stroke: var(--color-tiffany);
-            stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
-        }
-
-        .tool-list > li > .tl-name,
-        .tool-list > li > .tl-exp {
-            position: absolute;
-            left: 50%;
-            color: var(--color-gray-dark-1);
-        }
-
-        .tool-list > li > .tl-name {
-            top: 40%;
-            font-size: 1.2rem;
-            transform: translate(-50%, -50%);
-        }
-
-        .tool-list > li > .tl-exp {
-            top: calc(50% + 1.8rem);
-            font-size: 1rem;
-            transform: translate(-50%, -50%);
-        }
 /* Interests Section */
 .outer-frame {
     border: 1px solid var(--color-gray-dark-3);
@@ -400,71 +274,6 @@ body {
             letter-spacing: 1px;
         }
 
-@keyframes circle {
-    0% {
-        box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
-    }
-
-    100% {
-        box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
-    }
-}
-
-@media (max-width: 1024px) {
-    html {
-        font-size: 90%;
-    }
-
-    .wrapper {
-        flex-direction: column;
-    }
-
-    .intro, .detail {
-        flex: 0 0 100%;
-        box-shadow: none;
-    }
-
-    .intro-section {
-        padding: 0 2rem;
-    }
-
-    .profile {
-        margin-bottom: 1rem;
-    }
-
-        .profile::after {
-            display: none;
-        }
-
-    .photo img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 80%;
-    }
-
-    .tool-list {
-        flex-wrap: wrap;
-    }
-
-        .tool-list > li {
-            flex: 0 0 33.33%;
-        }
-
-    .favor-list > li {
-        flex: 0 0 33.3333%;
-    }
-}
-
-@media (max-width: 500px) {
-    html {
-        font-size: 70%;
-    }
-}
 
 .color-icon-orange {
     filter: invert(52%) sepia(66%) saturate(2207%) hue-rotate(353deg) brightness(90%) contrast(87%);
@@ -475,5 +284,10 @@ body {
 }
 
 form {
-    text-align: center; /*to do*/
+    text-align: center;
+}
+
+.big-bold-text {
+  font-size: 20px;
+  font-weight: bold;
 }

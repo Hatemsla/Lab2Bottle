@@ -1,10 +1,11 @@
 """
 Routes and views for the bottle application.
 """
+import json
 
 # -*- coding: utf-8 -*-
 
-from bottle import route, view, request
+from bottle import route, view, request, post
 from datetime import datetime
 
 
@@ -80,6 +81,7 @@ def about():
         required_product=""
     )
 
+
 @route('/our_clients_new_client')
 @view('our_clients_new_client')
 def about():
@@ -97,12 +99,34 @@ def about():
     )
 
 
+@post('/reviews_page')
 @route('/reviews_page')
 @view('reviews_page')
-def about():
-    """Renders the our_clients page."""
+def review_form_handler():
+    file_path = 'static/data/reviews.json'
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except:
+        data = {}
+
+    if request.forms.get("reviews_form") == "Send":
+        name = str(request.forms.get('inputName'))
+        mail = str(request.forms.get('inputMail'))
+        review = str(request.forms.get('inputReview'))
+        if name in data:
+            data[name]['mail'] = mail
+            data[name]['messages'].append(review)
+        else:
+            data[name] = {'mail': mail, 'messages': [review]}
+        with open(file_path, 'w', encoding="utf-8") as outfile:
+            json.dump(data, outfile, indent=4)
+
+    # print(data)
+
     return dict(
         title='Reviews',
         message='Reviews',
-        year=datetime.now().year
+        year=datetime.now().year,
+        data=data
     )
