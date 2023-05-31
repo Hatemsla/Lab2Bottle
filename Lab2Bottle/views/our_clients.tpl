@@ -18,13 +18,11 @@
                     <div>
                         <label for="name_company">Название организации:</label>
                         <input name="name_company" id="name_company" value="{{name_company}}"
-                            pattern="^(?=.*[a-zA-Z])[a-zA-Z0-9]+( [a-zA-Z0-9]+)+$" required
                             title="Укажите название компании, которое состоит не только из цифр и длиной более 2 знаков">
                     </div>
                     <div>
                         <label for="required_product">Требуемый продукт</label>
                         <input name="required_product" id="required_product" value="{{required_product}}"
-                            pattern="^(?=.*[a-zA-Z])[a-zA-Z0-9]+( [a-zA-Z0-9]+)+$" required
                             title="Укажите требуемый продукт. Название не может состоять только из цифр и должно быть длиной более 2 знаков ">
                     </div>
                     <div>
@@ -111,25 +109,25 @@
             </div>
           </div>
         </div>
-        <div class="detail-section edu">
-            <div class="detail-title">
-                <div class="title-icon">
-                    <img class="color-icon-white" width="20" height="20" src="\static\images\icon\now_client.svg"></img>
+        % if len(data_clients) > 0:
+            % for company, company_data in data_clients.items():
+                <div class="detail-section edu">
+                    <div class="detail-title">
+                        <div class="title-icon">
+                            <img class="color-icon-white" width="20" height="20" src="\static\images\icon\now_client.svg"></img>
+                        </div>
+                        <span>{{company}}</span>
+                    </div>
+                    <div class="detail-content">
+                        % for order in company_data["orders"]:
+                            <div class="timeline-block">
+                                <h1>{{order['product']}}</h1>
+                                <p >{{order['technologies']}}</p>
+                            </div>
+                        % end
+                    </div>
                 </div>
-                <span>Наши клиенты</span>
-            </div>
-            <div class="detail-content">
-            <div class="timeline-block">
-              <h1>Средняя школа № 252</h1>
-              <p>Государственное бюджетное образовательное учреждение Красносельского района Санкт-Петербурга</p>
-              <time>2011 - 2020</time>
-            </div>
-            <div class="timeline-block">
-              <h1>Факультет среднего профессионального образования ГУАП</h1>
-              <p>Федеральное государственное автономное образовательное учреждение высшего профессионального образования "Санкт-Петербургский государственный университет аэрокосмического приборостроения"</p>
-              <time>2020 - present</time>
-            </div>
-          </div>
-        </div>
+            % end
+        % end
     </div>
 </div>
