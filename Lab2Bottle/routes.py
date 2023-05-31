@@ -109,9 +109,9 @@ def review_form_handler():
         data = {}
 
     if request.forms.get("reviews_form") == "Send":
-        name = str(request.forms.get('inputName'))
-        mail = str(request.forms.get('inputMail'))
-        review = str(request.forms.get('inputReview'))
+        name = str(request.forms.getunicode('inputName'))
+        mail = str(request.forms.getunicode('inputMail'))
+        review = str(request.forms.getunicode('inputReview'))
         if name in data:
             data[name]['mail'] = mail
             data[name]['messages'].append(review)
