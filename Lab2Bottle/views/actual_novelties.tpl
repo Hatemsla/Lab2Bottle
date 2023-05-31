@@ -10,7 +10,7 @@
 		<form accept-charset="UTF-8" action="/actual_novelties" method="post" enctype="multipart/form-data">
 			<label class="label-text" for="theme">Тема:</label>
 			<div class="form-input">
-				<input type="text" name="theme" placeholder="Тема" pattern="^(?=.*[a-zA-Z]).{10,60}$" minlength="10" maxlength="60" required>
+				<input type="text" name="theme" placeholder="Тема" pattern="^(?=.*[a-zA-Z]).{10,100}$" minlength="10" maxlength="60" required>
 			</div>
 			<label class="label-text" for="novelties">Новинка:</label>
 			<div class="form-input">
