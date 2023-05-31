@@ -2,6 +2,8 @@ from datetime import datetime
 import json
 from bottle import post, request, route, view
 
+# -*- coding: utf-8 -*-
+
 
 @post('/actual_novelties')
 @route('/actual_novelties')
@@ -17,7 +19,7 @@ def form_handler():
     data_file_path = 'static/data/actual_novelties.json'
     
     try:
-        with open(data_file_path, 'r', encoding='utf-8') as f:
+        with open(data_file_path, 'r', encoding="utf-8") as f:
             existing_data = json.load(f)
     except:
         existing_data = {}
@@ -31,13 +33,13 @@ def form_handler():
     data['theme'] = theme
     data['novelties'] = novelties
     data['author'] = author
+    data['date'] = f"{formatted_date} в {formatted_time}"
     existing_data[str(index)] = data
     
-    with open(data_file_path, 'w', encoding='utf-8') as f:
+    with open(data_file_path, 'w', encoding="utf-8") as f:
         json.dump(existing_data, f, indent=4, ensure_ascii=False)
     
     return dict(
         data_file_path=data_file_path,
-        date=f"{formatted_date} в {formatted_time}",
         year=datetime.now().year
     )
