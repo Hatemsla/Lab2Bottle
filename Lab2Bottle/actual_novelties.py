@@ -38,5 +38,6 @@ def form_handler():
     
     return dict(
         data_file_path=data_file_path,
-        date=f"{formatted_date} в {formatted_time}"
+        date=f"{formatted_date} в {formatted_time}",
+        year=datetime.now().year
     )

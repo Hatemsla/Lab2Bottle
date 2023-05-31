@@ -37,7 +37,7 @@
 		%if data:
 			%for i in data:
 				<div>
-					<h3>{{data['theme']}}</h3>
+					<h3>{{data[str(i)]['theme'].encode('utf-8')}}</h3>
 				</div>
 			%end
 		%end
