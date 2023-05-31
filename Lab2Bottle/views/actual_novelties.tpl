@@ -10,7 +10,7 @@
 		<form accept-charset="UTF-8" action="/actual_novelties" method="post" enctype="multipart/form-data">
 			<label class="label-text" for="theme">Тема:</label>
 			<div class="form-input">
-				<input type="text" name="theme" placeholder="Тема" pattern="^(?=.*[a-zA-Z]).{10,100}$" minlength="10" maxlength="60" required>
+				<input type="text" name="theme" placeholder="Тема" pattern="^(?=.*[а-яА-Яa-zA-Z]).{10,100}$" title="Количество символов от 10 до 100 и должны быть слова" minlength="10" maxlength="60" required>
 			</div>
 			<label class="label-text" for="novelties">Новинка:</label>
 			<div class="form-input">
@@ -51,7 +51,7 @@
                     <p class="author">{{data[str(i)]['author']}}</p>
                     <p>&nbsp;написал&nbsp;</p>
                     <p class="date">{{data[str(i)]['date']}}</p>
-                    <p>&nbsp;обращаетесь по номера&nbsp;</p>
+                    <p>&nbsp;обращаетесь по номеру&nbsp;</p>
                     <p class="phone">{{data[str(i)]['phone']}}</p>
                 </div>
             </div>

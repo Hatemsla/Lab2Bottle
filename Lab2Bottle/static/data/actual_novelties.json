@@ -5,5 +5,12 @@
         "author": "Lorem",
         "date": "31 May 2023 в 14:09",
         "phone": "+7 839 343 34 34"
+    },
+    "2": {
+        "theme": "Организация хакатонов",
+        "novelties": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt mauris vel est varius hendrerit. Nulla facilisi. Maecenas scelerisque neque augue, imperdiet finibus massa malesuada quis. Vivamus id suscipit dui. Phasellus faucibus scelerisque nulla quis luctus. Cras commodo, orci non venenatis lobortis, nulla nulla tincidunt leo, consequat tempus dolor arcu fermentum nulla. Sed eget porta libero. Curabitur mattis tellus sem, vel vestibulum orci maximus eu. Donec quis semper quam. Vestibulum consequat neque a tincidunt rhoncus. Integer vel vulputate nulla. Donec vitae velit sit amet libero lacinia facilisis. Vestibulum porttitor, nulla et placerat tincidunt, dolor quam interdum dui, vel feugiat tortor sem vehicula dolor. Mauris faucibus, ante quis suscipit laoreet, ipsum ligula finibus urna, eu fermentum massa diam non lacus.\r\n\r\nNunc varius vel orci at viverra. Integer id tincidunt nibh. Vivamus dignissim tortor eu nibh mattis elementum. Integer blandit diam eget pharetra imperdiet. Phasellus euismod, nisi et luctus vulputate, enim velit venenatis nulla, id elementum sapien enim et elit. Curabitur quis dictum leo. Donec vel diam tristique, laoreet urna vitae, efficitur lorem. In auctor dolor velit, et posuere neque molestie nec. Nullam eget malesuada purus.",
+        "author": "1",
+        "date": "31 May 2023 в 14:44",
+        "phone": "+7 832 432 34 14"
     }
 }
