@@ -78,22 +78,26 @@ def about():
         data_clients=data,
         name_company="",
         required_product="",
-        text_error = ''
+        text_error = '',
+        phone='',
+        email=''
     )
 
 @route('/our_clients_new_client', method='post')
 @post('/our_clients_new_client', method='post')
 @view('our_clients')
 def about():
-    data, error = our_clients_handler.user_data_processing()
+    data, error, name_company, required_product, phone, email = our_clients_handler.user_data_processing()
     return dict(
         title='Our clients',
         message='Our clients page',
         year=datetime.now().year,
         data_clients=data,
-        name_company='',
-        required_product='',
-        text_error=error
+        name_company=name_company,
+        required_product=required_product,
+        text_error=error,
+        phone=phone,
+        email=email
     )
 
 
