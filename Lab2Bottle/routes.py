@@ -2,6 +2,7 @@
 Routes and views for the bottle application.
 """
 import json
+import re
 
 # -*- coding: utf-8 -*-
 
@@ -113,23 +114,42 @@ def review_form_handler():
     except:
         data = {}
 
+    name = mail = review = ""
+
     if request.forms.get("reviews_form") == "Send":
         name = str(request.forms.getunicode('inputName'))
         mail = str(request.forms.getunicode('inputMail'))
         review = str(request.forms.getunicode('inputReview'))
-        if name in data:
-            data[name]['mail'] = mail
-            data[name]['messages'].append(review)
+        if len(name) > 2:
+            if mail_correct(mail):
+                if name in data:
+                    data[name]['mail'] = mail
+                    if review not in data[name]['messages']:
+                        data[name]['messages'].append(review)
+                        name = mail = review = ""
+                    else:
+                        review = "none"
+                else:
+                    data[name] = {'mail': mail, 'messages': [review]}
+                    name = mail = review = ""
+                with open(file_path, 'w', encoding="utf-8") as outfile:
+                    json.dump(data, outfile, indent=4)
+            else:
+                mail = "none"
         else:
-            data[name] = {'mail': mail, 'messages': [review]}
-        with open(file_path, 'w', encoding="utf-8") as outfile:
-            json.dump(data, outfile, indent=4)
-
-    # print(data)
+            name = "none"
 
     return dict(
         title='Reviews',
         message='Reviews',
         year=datetime.now().year,
-        data=data
+        data=data,
+        name=name,
+        mail=mail,
+        review=review,
     )
+
+
+def mail_correct(mail):
+    regex = re.fullmatch(r'^([A-Za-z])([A-Za-z0-9]+)@([a-z0-9]{2,10})\.([a-z]{2,3})$', mail)
+    return regex
