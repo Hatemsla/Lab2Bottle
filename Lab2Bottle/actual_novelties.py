@@ -12,6 +12,7 @@ def form_handler():
     theme = request.forms.get("theme")
     novelties = request.forms.get("novelties")
     author = request.forms.get("author")
+    phone = request.forms.get("phone")
     
     now = datetime.now()
     formatted_date = now.strftime("%d %b %Y")
@@ -34,12 +35,26 @@ def form_handler():
     data['novelties'] = novelties
     data['author'] = author
     data['date'] = f"{formatted_date} в {formatted_time}"
-    existing_data[str(index)] = data
+    data['phone'] = phone
     
+    for i in existing_data:
+        if theme == existing_data[str(i)]['theme']:
+            return dict(
+            data_file_path=data_file_path,
+            year=datetime.now().year,
+            error='1'
+        )
+    
+    existing_data[str(index)] = data
+
+
     with open(data_file_path, 'w', encoding="utf-8") as f:
         json.dump(existing_data, f, indent=4, ensure_ascii=False)
     
+    
     return dict(
         data_file_path=data_file_path,
-        year=datetime.now().year
+        year=datetime.now().year,
+        error=''
     )
+        

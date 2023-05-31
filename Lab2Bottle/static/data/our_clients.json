@@ -76,5 +76,15 @@
         ],
         "phone": "+7 343 343 34 34",
         "email": "kalashnikovjan@gmail.com"
+    },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu auctor magna. Etiam sapien lectus, scelerisque sit amet sem efficitur, vulputate laoreet urna. Vestibulum mollis velit sit amet congue convallis. Ut quis leo consequat, hendrerit quam vel, interdum est. Donec eros magna, ornare sed lacus in, accumsan tincidunt lorem. Aliquam erat volutpat. Nulla lobortis tincidunt dui. Phasellus convallis sem orci, nec sollicitudin ipsum lobortis eget. Maecenas auctor consectetur libero, at vestibulum nisl varius quis.": {
+        "orders": [
+            {
+                "product": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu auctor magna. Etiam sapien lectus, scelerisque sit amet sem efficitur, vulputate laoreet urna. Vestibulum mollis velit sit amet congue convallis. Ut quis leo consequat, hendrerit quam vel, interdum est. Donec eros magna, ornare sed lacus in, accumsan tincidunt lorem. Aliquam erat volutpat. Nulla lobortis tincidunt dui. Phasellus convallis sem orci, nec sollicitudin ipsum lobortis eget. Maecenas auctor consectetur libero, at vestibulum nisl varius quis.",
+                "technologies": ""
+            }
+        ],
+        "phone": "+7 343 343 34 34",
+        "email": "kalashnikovjan@gmail.com"
     }
 }

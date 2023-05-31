@@ -62,7 +62,8 @@ def about():
     data_file_path = 'static/data/actual_novelties.json'
     return dict(
         data_file_path=data_file_path,
-        year=now.year
+        year=now.year,
+        error=''
     )
 
 
