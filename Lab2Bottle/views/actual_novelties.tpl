@@ -10,15 +10,15 @@
 		<form accept-charset="UTF-8" action="/actual_novelties" method="post" enctype="multipart/form-data">
 			<label class="label-text" for="theme">Тема:</label>
 			<div class="form-input">
-				<input type="text" name="theme" placeholder="Тема">
+				<input type="text" name="theme" placeholder="Тема" required>
 			</div>
 			<label class="label-text" for="novelties">Новинка:</label>
 			<div class="form-input">
-				<textarea type="text" name="novelties" placeholder="Новинка"></textarea>
+				<textarea type="text" name="novelties" placeholder="Новинка" required></textarea>
 			</div>
 			<label class="label-text" for="author">Автор:</label>
 			<div class="form-input">
-				<input type="text" name="author" placeholder="Автор">
+				<input type="text" name="author" placeholder="Автор" required>
 			</div>
 			<div class="form-buttons">
 				<button class="btn" type="submit" name="form" value="Send">Добавить</button>

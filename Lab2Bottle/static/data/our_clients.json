@@ -46,5 +46,35 @@
         ],
         "phone": "+7 812 512 20 59",
         "email": "yandex@yandex.ru"
+    },
+    "sdsd": {
+        "orders": [
+            {
+                "product": "sds",
+                "technologies": "CSS | JavaScript | "
+            }
+        ],
+        "phone": "+7 343 343 34 34",
+        "email": "kalashnikovjan@gmail.com"
+    },
+    "\u0445\u0423\u0419": {
+        "orders": [
+            {
+                "product": "\u0445\u0443\u0439",
+                "technologies": ""
+            }
+        ],
+        "phone": "+7 384 348 34 34",
+        "email": "lolikmolik123@yandex.ru"
+    },
+    "\u0425\u0423\u0419": {
+        "orders": [
+            {
+                "product": "\u0445\u0443\u0439",
+                "technologies": "HTML | CSS | JavaScript | React | Node | Django | ASP.NET | PHP | MySQL | PostgreSQL | MongoDB | Java | Kotlin | Swift | Objective-C | "
+            }
+        ],
+        "phone": "+7 343 343 34 34",
+        "email": "kalashnikovjan@gmail.com"
     }
 }

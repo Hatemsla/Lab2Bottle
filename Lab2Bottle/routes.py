@@ -8,8 +8,8 @@ import json
 from bottle import route, view, request, post
 from datetime import datetime
 
-from Lab2Bottle.static.model import our_clients_handler
-
+from static.model import our_clients_handler # Lab2Bottle.static.model нихуя не работает
+ 
 
 @route('/')
 @route('/home')
