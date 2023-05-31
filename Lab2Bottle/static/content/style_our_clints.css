@@ -40,7 +40,7 @@ body {
 }
 
 .intro {
-    flex: 0 0 400px;
+    flex: 0 0 500px;
     background-color: var(--color-gray-light-1);
     box-shadow: 5px 0px 15px 0px #b3b3b3;
     z-index: 5;
@@ -61,13 +61,13 @@ body {
         left: 0;
         bottom: -20px;
         width: 100%;
-        height: 40px;
+        height: 50px;
         background-color: var(--profile-theme);
         transform: skewY(-5deg);
     }
 
 .photo img {
-    width: 65%;
+    width: 60%;
     border-radius: 20%;
 }
 
@@ -269,203 +269,7 @@ body {
         animation: circle 1.2s infinite;
     }
 
-/* Programming skills section */
-.pg-list, .tool-list, .favor-list {
-    padding: 0;
-    list-style: none;
-}
 
-.pg-list-li {
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-}
-
-.sb-skeleton {
-    position: relative;
-    flex: 1 0 auto;
-    height: 2px;
-    background-color: var(--color-gray-dark-3);
-}
-
-.pg-list-li-span {
-    flex: 0 0 100px;
-}
-
-.sb-skeleton > .skillbar {
-    position: absolute;
-    left: 0;
-    top: -1px;
-    width: var(--pgbar-length);
-    height: 4px;
-    background-color: var(--profile-theme);
-}
-
-.tool-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-    .tool-list > li {
-        position: relative;
-        text-align: center;
-        flex: 0 0 25%;
-    }
-
-        .tool-list > li > svg {
-            position: relative;
-            fill: transparent;
-            width: 95%;
-            transform: rotate(-90deg);
-        }
-
-            .tool-list > li > svg > circle {
-                stroke-width: 1px;
-                stroke: #cdcdcd;
-            }
-
-                .tool-list > li > svg > circle.cbar {
-                    stroke-width: 3px;
-                    stroke: var(--profile-theme);
-                    stroke-linecap: round;
-                    stroke-dashoffset: 0;
-                    stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
-                    transition: all 0.8s;
-                    transition-timing-function: cubic-bezier(.64,.51,.16,.86);
-                }
-
-        .tool-list > li:hover > svg > circle.cbar {
-            stroke-width: 4px;
-            stroke: var(--color-tiffany);
-            stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
-        }
-
-        .tool-list > li > .tl-name,
-        .tool-list > li > .tl-exp {
-            position: absolute;
-            left: 50%;
-            color: var(--color-gray-dark-1);
-        }
-
-        .tool-list > li > .tl-name {
-            top: 40%;
-            font-size: 1.2rem;
-            transform: translate(-50%, -50%);
-        }
-
-        .tool-list > li > .tl-exp {
-            top: calc(50% + 1.8rem);
-            font-size: 1rem;
-            transform: translate(-50%, -50%);
-        }
-/* Interests Section */
-.outer-frame {
-    border: 1px solid var(--color-gray-dark-3);
-    border-radius: 5px;
-}
-
-.favor-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
-
-    .favor-list > li {
-        display: flex;
-        flex: 1 0 0;
-        align-items: center;
-        justify-content: baseline;
-        flex-direction: column;
-        color: var(--profile-theme);
-        padding: 1rem 0;
-        transition: all 0.3s;
-    }
-
-        .favor-list > li > i {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            width: 50px;
-            height: 50px;
-        }
-
-        .favor-list > li:hover {
-            transform: scale(1.2);
-            color: var(--color-tiffany);
-        }
-
-        .favor-list > li > span {
-            letter-spacing: 1px;
-        }
-
-@keyframes circle {
-    0% {
-        box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
-    }
-
-    100% {
-        box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
-    }
-}
-
-@media (max-width: 1024px) {
-    html {
-        font-size: 90%;
-    }
-
-    .wrapper {
-        flex-direction: column;
-    }
-
-    .intro, .detail {
-        flex: 0 0 100%;
-        box-shadow: none;
-    }
-
-    .intro-section {
-        padding: 0 2rem;
-    }
-
-    .profile {
-        margin-bottom: 1rem;
-    }
-
-        .profile::after {
-            display: none;
-        }
-
-    .photo img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 80%;
-    }
-
-    .tool-list {
-        flex-wrap: wrap;
-    }
-
-        .tool-list > li {
-            flex: 0 0 33.33%;
-        }
-
-    .favor-list > li {
-        flex: 0 0 33.3333%;
-    }
-}
-
-@media (max-width: 500px) {
-    html {
-        font-size: 70%;
-    }
-}
 
 .color-icon-blue {
     filter: invert(52%) sepia(20%) saturate(1274%) hue-rotate(169deg) brightness(88%) contrast(93%);

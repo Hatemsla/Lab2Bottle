@@ -27,27 +27,27 @@
                 <div class="info-section">
                     <label for="name_company">Название организации:</label>
                     <input name="name_company" id="name_company" value="{{name_company}}" required
-                           pattern="^(?!\d+$).{2,}$" class="input-field"
+                           pattern="^(?!\d+$).{2,}$" class="input-field" maxlength="40"
                             title="Укажите название компании, которое состоит не только из цифр и длиной более 2 знаков">
                 </div>
                 <div class="info-section">
                     <label for="required_product">Требуемый продукт:</label>
                     <input name="required_product" id="required_product" value="{{required_product}}" required
-                           pattern="^(?!\d+$).{2,}$" class="input-field"
+                           pattern="^(?!\d+$).{2,}$" class="input-field" maxlength="50"
                             title="Укажите требуемый продукт. Название не может состоять только из цифр и должно быть длиной более 2 знаков ">
                 </div>
                 <div class="info-section">
                     <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg"></img>
                     <label for="company_phone">Телефон для обратной связи:</label>
                     <input name="company_phone" id="company_phone" value="{{phone}}"
-                                   pattern="\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}" class="input-field"
-                                   title="Введите российский мобильный номер в формате +7 xxx xxx xx xx" required >
+                                   pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$" class="input-field"
+                                   title="Введите российский номер в формате +7 xxx xxx xx xx" required >
                 </div>
                 <div class="info-section">
                     <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\envelope-solid.svg"></img>
                     <label for="company_phone">Email для обратной связи:</label>
                     <input name="company_email" id="company_email"  class="input-field"
-                           pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                           pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
                            value="{{email}}"
                            title="Осуществляется проверка адреса Email. Введите существующий адрес." required>
                 </div>

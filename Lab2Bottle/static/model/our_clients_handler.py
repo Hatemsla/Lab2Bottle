@@ -2,22 +2,23 @@ from bottle import request
 import json
 import re
 file_path = 'static/data/our_clients.json'
-pattern_phone = re.compile("\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}")
-pattern_email = re.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+pattern_phone = re.compile(r'^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$')
+pattern_email = re.compile(r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$")
 
+#Функция проверки телефона
 def check_phone(phone):
     if pattern_phone.match(phone):
         return ''
     return 'Телефон не соответствует требуемому шаблону!'
 
-
+#Функция проверки email
 def check_email(email):
     if pattern_email.match(email):
         return ''
     return 'Email не соответствует требуемому шаблону!'
 
 
-
+# Функция обработки добавление нового заказа
 def user_data_processing():
     data = read_from_file()
     name_company = request.forms.getunicode('name_company')
@@ -47,7 +48,7 @@ def user_data_processing():
     return data, "", '', '', '', ''
 
 
-
+# Формирование стека технологий из checkboxs с формы
 def technology_stack_formation():
     resultText = ""
     if request.forms.getunicode('technologies_html') == 'on':
@@ -80,8 +81,15 @@ def technology_stack_formation():
         resultText +="Swift" + " | "
     if request.forms.getunicode('technologies_Objective-C') == 'on':
         resultText +="Objective-C" + " | "
+    if request.forms.getunicode('technologies_charp') == 'on':
+        resultText +="C#" + " | "
+    if request.forms.getunicode('technologies_c_plus') == 'on':
+        resultText +="C++" + " | "
+    if request.forms.getunicode('technologies_python') == 'on':
+        resultText +="Python" + " | "
     return resultText
 
+# Функция чтения json из файла
 def read_from_file():
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -90,6 +98,7 @@ def read_from_file():
         data = {}
     return data
 
+# Функция записи json в файл
 def write_to_file(data):
     with open(file_path, 'w', encoding="utf-8") as outfile:
         json.dump(data, outfile, indent=4)
