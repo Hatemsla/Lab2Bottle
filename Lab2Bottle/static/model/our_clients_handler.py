@@ -23,7 +23,7 @@ def user_data_processing():
             "email": email
         }
     write_to_file(data)
-    return ""
+    return data
 
 def technology_stack_formation():
     resultText = ""

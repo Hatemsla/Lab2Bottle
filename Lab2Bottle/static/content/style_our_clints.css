@@ -1,14 +1,14 @@
 
 :root {
     --color-gray-light-1: #f8f8f8;
-    --color-gray-light-2: #e9e9e9;
+    --color-gray-light-2: #e9e9e9d;
     --color-gray-light-3: #dedede;
     --color-gray-dark-1: #545454;
     --color-gray-dark-2: #737373;
     --color-gray-dark-3: #9a9a9a;
     --color-blue-dark-1: #00387f;
     --color-tiffany: #00a6a6;
-    --profile-theme: #d76f1c;
+    --profile-theme: #4682bf;
     --timeline-circle-theme: #14253e;
     --pgbar-length: 100%;
     --MATH-PI: 3.1415px;
@@ -40,18 +40,51 @@ body {
 }
 
 .intro {
-    flex: 0 0 250px;
+    flex: 0 0 400px;
     background-color: var(--color-gray-light-1);
     box-shadow: 5px 0px 15px 0px #b3b3b3;
     z-index: 5;
 }
 
+.profile {
+    position: relative;
+    background-color: var(--profile-theme);
+    padding: 2rem 1rem;
+    margin-bottom: 50px;
+    text-align: center;
+    user-select: none;
+}
+
+    .profile::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 100%;
+        height: 40px;
+        background-color: var(--profile-theme);
+        transform: skewY(-5deg);
+    }
 
 .photo img {
-    width: 80%;
+    width: 65%;
     border-radius: 50%;
 }
 
+.bio .name {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-gray-light-1);
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.bio .profession {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-gray-light-1);
+    margin: 0;
+}
 
 .intro-section {
     padding: 0 1rem;
@@ -64,6 +97,10 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
     }
+
+.about .paragraph {
+    text-align: justify;
+}
 
 .info-section {
     margin: 1rem 0;
@@ -191,10 +228,10 @@ body {
         transition: all 0.3s;
     }
 
-    /*.timeline-block p {
+    .timeline-block p {
         font-size: 0.8rem;
         margin: 5px 0;
-    }*/
+    }
 
     .timeline-block time {
         font-size: 0.8rem;
@@ -231,7 +268,96 @@ body {
         animation: circle 1.2s infinite;
     }
 
+/* Programming skills section */
+.pg-list, .tool-list, .favor-list {
+    padding: 0;
+    list-style: none;
+}
 
+.pg-list-li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.sb-skeleton {
+    position: relative;
+    flex: 1 0 auto;
+    height: 2px;
+    background-color: var(--color-gray-dark-3);
+}
+
+.pg-list-li-span {
+    flex: 0 0 100px;
+}
+
+.sb-skeleton > .skillbar {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: var(--pgbar-length);
+    height: 4px;
+    background-color: var(--profile-theme);
+}
+
+.tool-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .tool-list > li {
+        position: relative;
+        text-align: center;
+        flex: 0 0 25%;
+    }
+
+        .tool-list > li > svg {
+            position: relative;
+            fill: transparent;
+            width: 95%;
+            transform: rotate(-90deg);
+        }
+
+            .tool-list > li > svg > circle {
+                stroke-width: 1px;
+                stroke: #cdcdcd;
+            }
+
+                .tool-list > li > svg > circle.cbar {
+                    stroke-width: 3px;
+                    stroke: var(--profile-theme);
+                    stroke-linecap: round;
+                    stroke-dashoffset: 0;
+                    stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
+                    transition: all 0.8s;
+                    transition-timing-function: cubic-bezier(.64,.51,.16,.86);
+                }
+
+        .tool-list > li:hover > svg > circle.cbar {
+            stroke-width: 4px;
+            stroke: var(--color-tiffany);
+            stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
+        }
+
+        .tool-list > li > .tl-name,
+        .tool-list > li > .tl-exp {
+            position: absolute;
+            left: 50%;
+            color: var(--color-gray-dark-1);
+        }
+
+        .tool-list > li > .tl-name {
+            top: 40%;
+            font-size: 1.2rem;
+            transform: translate(-50%, -50%);
+        }
+
+        .tool-list > li > .tl-exp {
+            top: calc(50% + 1.8rem);
+            font-size: 1rem;
+            transform: translate(-50%, -50%);
+        }
 /* Interests Section */
 .outer-frame {
     border: 1px solid var(--color-gray-dark-3);
@@ -274,20 +400,114 @@ body {
             letter-spacing: 1px;
         }
 
+@keyframes circle {
+    0% {
+        box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+    }
 
-.color-icon-orange {
-    filter: invert(52%) sepia(66%) saturate(2207%) hue-rotate(353deg) brightness(90%) contrast(87%);
+    100% {
+        box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+    }
 }
 
+@media (max-width: 1024px) {
+    html {
+        font-size: 90%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .intro, .detail {
+        flex: 0 0 100%;
+        box-shadow: none;
+    }
+
+    .intro-section {
+        padding: 0 2rem;
+    }
+
+    .profile {
+        margin-bottom: 1rem;
+    }
+
+        .profile::after {
+            display: none;
+        }
+
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .tool-list {
+        flex-wrap: wrap;
+    }
+
+        .tool-list > li {
+            flex: 0 0 33.33%;
+        }
+
+    .favor-list > li {
+        flex: 0 0 33.3333%;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+.color-icon-blue {
+    filter: invert(52%) sepia(20%) saturate(1274%) hue-rotate(169deg) brightness(88%) contrast(93%);
+}
 .color-icon-white {
     filter: invert(100%) sepia(22%) saturate(90%) hue-rotate(28deg) brightness(116%) contrast(100%);
 }
 
-form {
-    text-align: center;
+.p_technology {
+    font-weight: bold;
+    margin: 0px 10px 0px 0px;
+
+}
+.label-in-stack {
+    margin: 0px 0px 10px 0px;
 }
 
-.big-bold-text {
-  font-size: 20px;
-  font-weight: bold;
+.btn {
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 20px;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #337ab7;
+    color: #fff;
+
 }
+
+.btn:hover {
+  transform: scale(1.1);
+    color: #fff;
+    background-color: #3097ff;
+}
+
+.container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+

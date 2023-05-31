@@ -8,6 +8,8 @@ import json
 from bottle import route, view, request, post
 from datetime import datetime
 
+from Lab2Bottle.static.model import our_clients_handler
+
 
 @route('/')
 @route('/home')
@@ -68,31 +70,28 @@ def about():
 @view('our_clients')
 def about():
     """Renders the our_clients page."""
+    data = our_clients_handler.read_from_file()
     return dict(
         title='Our clients',
         message='Our clients page',
         year=datetime.now().year,
-        data_clients=[],
-        data_new_client=[],
+        data_clients=data,
         name_company="",
         required_product=""
     )
 
-
-@route('/our_clients_new_client')
-@view('our_clients_new_client')
+@route('/our_clients_new_client', method='post')
+@post('/our_clients_new_client', method='post')
+@view('our_clients')
 def about():
-    """Renders the our_clients page."""
-    name_company = request.forms.getunicode('name_company')
-    required_product = request.forms.getunicode('required_product')
+    data = our_clients_handler.user_data_processing()
     return dict(
         title='Our clients',
         message='Our clients page',
         year=datetime.now().year,
-        data_clients=[],
-        data_new_client=[],
-        name_company=name_company,
-        required_product=required_product
+        data_clients=data,
+        name_company='',
+        required_product=''
     )
 
 
