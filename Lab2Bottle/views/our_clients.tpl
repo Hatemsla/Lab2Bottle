@@ -1,4 +1,4 @@
-% rebase('layout.tpl', year=year, data_clients=data_clients, required_product=required_product, name_company=name_company, text_error=text_error)
+% rebase('layout.tpl', year=year, data_clients=data_clients, required_product=required_product, name_company=name_company, text_error=text_error, phone=phone, email=email)
 <link rel="stylesheet" href="/static/content/style_our_clints.css">
 <link rel="stylesheet" href="/static/content/font-awesome.css">
 
@@ -39,7 +39,7 @@
                 <div class="info-section">
                     <img class="color-icon-blue" width="20" height="20" src="\static\images\icon\phone-solid.svg"></img>
                     <label for="company_phone">Телефон для обратной связи:</label>
-                    <input name="company_phone" id="company_phone"
+                    <input name="company_phone" id="company_phone" value="{{phone}}"
                                    pattern="\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}" class="input-field"
                                    title="Введите российский мобильный номер в формате +7 xxx xxx xx xx" required >
                 </div>
@@ -48,6 +48,7 @@
                     <label for="company_phone">Email для обратной связи:</label>
                     <input name="company_email" id="company_email"  class="input-field"
                            pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                           value="{{email}}"
                            title="Осуществляется проверка адреса Email. Введите существующий адрес." required>
                 </div>
                 <div class="info-section">

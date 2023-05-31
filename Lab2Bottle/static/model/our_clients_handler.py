@@ -1,6 +1,22 @@
 from bottle import request
 import json
+import re
 file_path = 'static/data/our_clients.json'
+pattern_phone = re.compile("\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}")
+pattern_email = re.compile("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+
+def check_phone(phone):
+    if pattern_phone.match(phone):
+        return ''
+    return 'Телефон не соответствует требуемому шаблону!'
+
+
+def check_email(email):
+    if pattern_email.match(email):
+        return ''
+    return 'Email не соответствует требуемому шаблону!'
+
+
 
 def user_data_processing():
     data = read_from_file()
@@ -9,11 +25,17 @@ def user_data_processing():
     technologies = technology_stack_formation()
     phone = request.forms.getunicode('company_phone')
     email = request.forms.getunicode('company_email')
+    check_em = check_email(email)
+    check_ph = check_phone(phone)
+    if len(check_em):
+        return data, check_em, name_company, required_product, phone, email
+    if len(check_ph):
+        return data, check_ph, name_company, required_product, phone, email
     if name_company in data:
         orders = data[name_company]["orders"]
         for order in orders:
             if (order["product"]).lower() == required_product.lower():
-                return data, "Ошибка: У компании «" + name_company + "» уже есть заказ с продуктом «" + required_product + "»!"
+                return data, "Ошибка: У компании «" + name_company + "» уже есть заказ с продуктом «" + required_product + "»!", name_company, '', phone, email
         orders.append({"product": required_product, "technologies": technologies})
     else:
         data[name_company] = {
@@ -22,7 +44,9 @@ def user_data_processing():
             "email": email
         }
     write_to_file(data)
-    return data, ""
+    return data, "", '', '', '', ''
+
+
 
 def technology_stack_formation():
     resultText = ""
