@@ -5,7 +5,7 @@
 <div class="wrapper" style="margin-top:50px">
   <div class="intro">
     <div class="profile">
-      <div class="photo">
+      <div class="photo">l
         <img src="https://avatars.githubusercontent.com/u/89140653?v=4">
       </div>
       <div class="bio">
