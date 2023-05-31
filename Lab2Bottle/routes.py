@@ -151,5 +151,5 @@ def review_form_handler():
 
 
 def mail_correct(mail):
-    regex = re.fullmatch(r'^([A-Za-z])([A-Za-z0-9]+)@([a-z0-9]{2,10})\.([a-z]{2,3})$', mail)
+    regex = re.fullmatch(r"^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$", mail)
     return regex
