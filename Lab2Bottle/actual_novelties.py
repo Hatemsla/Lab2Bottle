@@ -1,14 +1,18 @@
 from datetime import datetime
 import json
+import locale
 from bottle import post, request, route, view
 
+
 # -*- coding: utf-8 -*-
+locale.setlocale(locale.LC_TIME, 'ru_RU')
 
 
 @post('/actual_novelties')
 @route('/actual_novelties')
 @view('actual_novelties')
 def form_handler():
+    """Функция обработчик формы"""
     theme = request.forms.get("theme")
     novelties = request.forms.get("novelties")
     author = request.forms.get("author")

@@ -3,6 +3,7 @@ Routes and views for the bottle application.
 """
 import json
 import re
+import locale
 
 # -*- coding: utf-8 -*-
 
@@ -10,7 +11,7 @@ from bottle import route, view, request, post
 from datetime import datetime
 
 from static.model import our_clients_handler # Lab2Bottle.static.model нихуя не работает
- 
+locale.setlocale(locale.LC_TIME, 'ru_RU')
 
 @route('/')
 @route('/home')

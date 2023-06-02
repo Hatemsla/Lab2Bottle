@@ -5,6 +5,17 @@
 <link rel="stylesheet" href="/static/content/style_actual_novelties_page.css">
 <link rel="stylesheet" href="/static/content/font-awesome.css">
 
+<script>
+    function showMore() {
+        var textContainer = document.getElementById('text-container');
+        var text = document.getElementById('text');
+        var button = document.getElementById('show-more-button');
+      
+        textContainer.classList.add('expanded');
+        button.style.display = 'none';
+      }
+</script>
+
 <div class="wrapper">
 	<div class="form-container">
 		<form accept-charset="UTF-8" action="/actual_novelties" method="post" enctype="multipart/form-data">
@@ -46,7 +57,7 @@
         %for i in reversed(data):
             <div class="info-container">
                 <h3 class="theme">{{data[str(i)]['theme']}}</h3>
-                <p class="novelties preview-text">{{data[str(i)]['novelties']}}</p>
+                <p id="text" class="novelties preview-text">{{data[str(i)]['novelties']}}</p>
                 <div class="end-data">
                     <p class="author">{{data[str(i)]['author']}}</p>
                     <p>&nbsp;написал&nbsp;</p>

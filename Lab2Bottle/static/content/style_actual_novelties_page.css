@@ -569,6 +569,7 @@ textarea{
 }
 
 .theme {
+    margin-top: 0px;
     margin-left: 5px;
 }
 
@@ -579,20 +580,28 @@ textarea{
 
 .author {
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .date{
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .phone{
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .end-data {
     margin-left: 5px;
     font-size: 18px;
     display: flex;
+    margin-bottom: 0px;
+}
+
+.end-data p{
+    margin-bottom: 0px;
 }
 
 .error {
