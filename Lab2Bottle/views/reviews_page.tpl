@@ -20,7 +20,7 @@
 				%mail = ""
 			%end
 			<label for="inputMail" class="form-label">Укажите свою почту:</label>
-			<input value="{{mail}}" class="input-field" type="text" name="inputMail" id="inputMail" maxlength="30" placeholder="Ваша почта" required>
+			<input value="{{mail}}" class="input-field" type="text" name="inputMail" id="inputMail" maxlength="30" placeholder="Ваша почта" required pattern="^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
 			%if review == "none":
 				<p class="warning">Такой вопрос уже был отправлен</p>
 				%review = ""
