@@ -2,7 +2,6 @@
 Routes and views for the bottle application.
 """
 import json
-import re
 import locale
 
 # -*- coding: utf-8 -*-
@@ -10,6 +9,7 @@ import locale
 from bottle import route, view, request, post
 from datetime import datetime
 
+from static.model import reviews_page_manager as review_manager
 from static.model import our_clients_handler # Lab2Bottle.static.model нихуя не работает
 locale.setlocale(locale.LC_TIME, 'ru_RU')
 
@@ -121,20 +121,19 @@ def review_form_handler():
         name = str(request.forms.getunicode('inputName'))
         mail = str(request.forms.getunicode('inputMail'))
         review = str(request.forms.getunicode('inputReview'))
-        if len(name) > 2:
-            if mail_correct(mail):
-                if name in data:
-                    data[name]['mail'] = mail
-                    if review not in data[name]['messages']:
-                        data[name]['messages'].append(review)
-                        name = mail = review = ""
-                    else:
+        if review_manager.name_correct(name):
+            if review_manager.mail_correct(mail):
+                exist = False
+                for i in data:
+                    if data[i]["name"] == name and data[i]["mail"] == mail and data[i]["message"] == review:
                         review = "none"
-                else:
-                    data[name] = {'mail': mail, 'messages': [review]}
+                        exist = True
+                        break
+                if not exist:
+                    data[str(datetime.now())] = {"name": name, "mail": mail, "message": review}
+                    with open(file_path, 'w', encoding="utf-8") as outfile:
+                        json.dump(data, outfile, indent=4)
                     name = mail = review = ""
-                with open(file_path, 'w', encoding="utf-8") as outfile:
-                    json.dump(data, outfile, indent=4)
             else:
                 mail = "none"
         else:
@@ -149,8 +148,3 @@ def review_form_handler():
         mail=mail,
         review=review,
     )
-
-
-def mail_correct(mail):
-    regex = re.fullmatch(r"^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$", mail)
-    return regex
