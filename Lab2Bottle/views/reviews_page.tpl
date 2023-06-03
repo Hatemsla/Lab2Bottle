@@ -1,6 +1,5 @@
 % rebase('layout.tpl', title=title, year=year, data=data, name=name, mail=mail, review=review)
 % import json
-% import random
 
 <link rel="stylesheet" href="/static/content/style_reviews_page.css">
 <link rel="stylesheet" href="/static/content/font-awesome.css">
@@ -14,29 +13,29 @@
 				%name = ""
 			%end
 			<label for="inputName" class="form-label">Введите свое имя:</label>
-			<input value="{{name}}" class="input-field" type="text" name="inputName" id="inputName" maxlength="20" placeholder="Ваше имя" required>
+			<input value="{{name}}" class="input-field" type="text" name="inputName" id="inputName" maxlength="20" placeholder="Ваше имя" pattern="^[\s_a-zа-яA-ZА-Я0-9]+$" required>
 			%if mail == "none":
 				<p class="warning">Адрес почты некорректен</p>
 				%mail = ""
 			%end
 			<label for="inputMail" class="form-label">Укажите свою почту:</label>
-			<input value="{{mail}}" class="input-field" type="text" name="inputMail" id="inputMail" maxlength="30" placeholder="Ваша почта" required pattern="^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+			<input value="{{mail}}" class="input-field" type="text" name="inputMail" id="inputMail" maxlength="30" placeholder="Ваша почта" required pattern="^[a-zA-Z0-9_-]+(?:\.[a-zA-Z0-9_-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
 			%if review == "none":
 				<p class="warning">Такой вопрос уже был отправлен</p>
 				%review = ""
 			%end
-			<textarea class="textarea-field" name="inputReview" id="inputReview" maxlength="1000" rows="10" cols="35" placeholder="Ваш отзыв" required>{{review}}</textarea>
+			<textarea class="textarea-field" name="inputReview" id="inputReview" maxlength="750" rows="10" cols="35" placeholder="Ваш отзыв" required>{{review}}</textarea>
 			<button class="btn" type="submit" name="reviews_form" value="Send">Отправить</button>
 		</form>
 	</div>
 	<div>
 		%massive = []
 		%for i in data:
-			%for j in range(0, len(data[i]['messages'])):
-				%massive.append([i, data[i]['messages'][j]])
-			%end
+			%name = data[i]['name']
+			%message = data[i]['message']
+			%massive.append([name, message])
 		%end
-		%random.shuffle(massive)
+		%massive.reverse()
 		%for i in massive:
 			<div class="info-container">
 				<img src="../static/images/user_avatar.png" class="image" alt="user_avatar" />
