@@ -16,19 +16,18 @@ class TestTheme(unittest.TestCase):
             self.assertTrue(re.fullmatch(theme_pattern, theme))
             
         
-class TestPhone(unittest.TestCase):    
-    def test_false_validate_phone(self):
-        phone_pattern = re.compile(r"\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}")
-        test_phones = ["+73047293423", "+82332123312", "8 282 424 13 42", "+7 (232) 232 34 12"]
-        for phone in test_phones:
-            self.assertFalse(re.fullmatch(phone_pattern, phone))
+class TestEmail(unittest.TestCase):    
+    email_pattern = re.compile(r"^([a-z])([a-z0-9]+)@([a-z0-9]+)\.([a-z]{2,3})$")
+    def test_false_validate_email(self):
+        test_false_emails = ["", "kalashnikov@@jan.ru", "232323@yandex.ru", "kalashnikovjan.ru", "kalashnikovjan@ru", "kalashnikovjan@.ru", "kalashnikovjan@yandexru", "kalashnikovjan@yandex..ru", "kalashnikovjan@yandex.rusd"]
+        for email in test_false_emails:
+            self.assertFalse(re.fullmatch(self.email_pattern, email))
             
     
-    def test_true_validate_theme(self):
-        phone_pattern = re.compile(r"\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}")
-        test_phones = ["+7 293 123 34 13", "+7 203 123 43 12", "+7 999 999 99 99"]
-        for phone in test_phones:
-            self.assertTrue(re.fullmatch(phone_pattern, phone))    
+    def test_true_validate_email(self):
+        test_true_emails = ["kalashnikovjan@yandex.ru", "kalashnikovhan123@gmail.com", "lolikmolik123@yandex.ru"]
+        for email in test_true_emails:
+            self.assertTrue(re.fullmatch(self.email_pattern, email))    
             
 
 if __name__ == "__main__":

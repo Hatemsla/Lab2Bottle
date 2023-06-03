@@ -65,7 +65,10 @@ def about():
     return dict(
         data_file_path=data_file_path,
         year=now.year,
-        error=''
+        error='',
+        novelties='',
+        author='',
+        email=''
     )
 
 
